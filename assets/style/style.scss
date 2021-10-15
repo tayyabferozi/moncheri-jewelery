@@ -1,0 +1,910 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+// FONTS START
+
+@font-face {
+  font-family: Optima;
+  src: url(../font/OptimaNovaLTProRegular.otf);
+}
+
+@font-face {
+  font-family: OptimaLight;
+  src: url(../font/OptimaNovaLTProLight.otf);
+}
+
+@font-face {
+  font-family: OptimaMed;
+  src: url(../font/OptimaNovaLTProMedium.otf);
+}
+
+@font-face {
+  font-family: OptimaBold;
+  src: url(../font/OptimaNovaLTProBlack.otf);
+}
+
+@font-face {
+  font-family: OptimaItalic;
+  src: url(../font/OptimaNovaLTProItalic.otf);
+}
+
+// FONTS END
+// VARIABLES START
+$color1: #49331e;
+$color2: #ffffff;
+$color3: #49341c;
+$color4: #c9b89b;
+// VARIABLES END
+// GLOBAL START
+html {
+  width: 100%;
+  font-size: 100%;
+  overflow-x: hidden;
+
+  @media screen and (max-width: 992px) {
+    font-size: 100%;
+  }
+
+  @media screen and (max-width: 668px) {
+    font-size: 92%;
+  }
+
+  @media screen and (max-width: 575px) {
+    font-size: 88%;
+  }
+
+  @media screen and (max-width: 475px) {
+    font-size: 84%;
+  }
+
+  @media screen and (max-width: 380px) {
+    font-size: 80%;
+  }
+
+  @media screen and (max-width: 280px) {
+    font-size: 76%;
+  }
+}
+
+body {
+  font-family: Optima;
+}
+
+section {
+  @media screen and (max-width: 1350px) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @media screen and (max-width: 575px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.page_container {
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+
+  p {
+    @media screen and (max-width: 399px) {
+      font-size: 10px;
+    }
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.f8 {
+  font-size: 0.5rem;
+}
+
+.f10 {
+  font-size: 0.625rem;
+}
+
+.f12 {
+  font-size: 0.75rem;
+}
+
+.f14 {
+  font-size: 0.875rem;
+}
+
+.f15 {
+  font-size: 0.938rem;
+}
+
+.f16 {
+  font-size: 1rem;
+}
+
+.f18 {
+  font-size: 1.125rem;
+}
+
+.f20 {
+  font-size: 1.25rem;
+}
+
+.f22 {
+  font-size: 1.375rem;
+}
+
+.f24 {
+  font-size: 1.5rem;
+}
+
+.f26 {
+  font-size: 1.625rem;
+}
+
+.f28 {
+  font-size: 1.75rem;
+}
+
+.f30 {
+  font-size: 1.875rem;
+}
+
+.f32 {
+  font-size: 2rem;
+}
+
+.f34 {
+  font-size: 2.125rem;
+}
+
+.f30 {
+  font-size: 1.875rem;
+}
+
+.f35 {
+  font-size: 2.125rem;
+  line-height: 57px;
+}
+
+.f40 {
+  font-size: 2.5rem;
+  line-height: 57px;
+}
+
+.f50 {
+  font-size: 3.125rem;
+  line-height: 65px;
+}
+
+.f64 {
+  font-size: 4rem;
+  line-height: 71px;
+}
+
+.fw400 {
+  font-weight: 400;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.fw800 {
+  font-weight: 800;
+}
+
+.fw900 {
+  font-weight: 900;
+}
+
+.color1 {
+  color: $color1;
+}
+
+.color2 {
+  color: $color1;
+}
+
+.color3 {
+  color: $color1;
+}
+
+.outlined-btn {
+  border: 1px solid $color3;
+  padding: 0.6rem 2rem;
+  background-color: transparent;
+  color: $color3;
+  font-size: 26px;
+  text-decoration: none;
+  cursor: pointer;
+
+  @media screen and (max-width: 576px) {
+    padding: 0.6rem 3rem;
+    font-size: 18px;
+  }
+}
+
+// <!-- ============ UPPER HEADER START ================ -->
+.upper_header_container {
+  img {
+    width: 20px;
+    height: auto;
+  }
+  .search_icon {
+    width: 17px;
+  }
+  .selectdiv {
+    position: relative;
+    /*Don't really need this just for demo styling*/
+    float: left;
+  }
+  /*To remove button from IE11, thank you Matt */
+  select::-ms-expand {
+    display: none;
+  }
+  select {
+    margin-top: 0.1rem;
+    &:focus {
+      outline: none;
+    }
+  }
+  .selectdiv:after {
+    content: url(../images/downIcon.svg);
+    color: #333;
+    right: 11px;
+    /*Adjust for position however you want*/
+    top: 1px;
+    padding: 0 0 2px;
+    /*left line */
+    position: absolute;
+    pointer-events: none;
+  }
+  .selectdiv select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Add some styling */
+    display: block;
+    float: right;
+    padding: 0px 20px 0px 0px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #333;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    -ms-word-break: normal;
+    word-break: normal;
+  }
+}
+
+// <!-- ============ UPPER HEADER END ================ -->
+// <!-- ============ HEADER START ================ -->
+.header_container {
+  .logo_container {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  li {
+    &.active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 110%;
+        height: 2px;
+        bottom: -1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #493220;
+      }
+    }
+  }
+  a {
+    color: $color1;
+
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 575px) {
+      font-size: 2.5vw;
+    }
+  }
+}
+
+// <!-- ============ HEADER END ================ -->
+// <!-- ============ HERO START ================ -->
+.hero_container {
+  background: url(../images/hero.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  width: 100%;
+  padding-top: 15rem;
+  padding-bottom: 13rem;
+
+  @media screen and (max-width: 767px) {
+    background: url("../images/bg-hero-plain.png");
+  }
+
+  @media screen and (max-width: 1400px) {
+    padding-top: 15vw;
+    padding-bottom: 13vw;
+  }
+
+  .text_content {
+    top: 30%;
+    left: 0%;
+
+    h1 {
+      font-size: 3rem;
+
+      @media screen and (max-width: 1400px) {
+        font-size: 3.5vw;
+      }
+
+      @media screen and (max-width: 767px) {
+        font-size: 5.5vw;
+        text-align: center;
+      }
+    }
+
+    p {
+      margin-bottom: 2rem;
+      font-size: 1.425rem;
+
+      @media screen and (max-width: 1400px) {
+        font-size: 1.6vw;
+      }
+
+      @media screen and (max-width: 767px) {
+        font-size: 2.6vw;
+        text-align: center;
+      }
+    }
+
+    button {
+      border: 1px solid #fff;
+      padding: 0.6rem 2rem;
+      background-color: transparent;
+      color: #fff;
+
+      @media screen and (max-width: 1400px) {
+        width: 11vw;
+        font-size: 1.145vw;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 767px) {
+        width: 15vw;
+        font-size: 1.75vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+
+      @media screen and (max-width: 767px) {
+        width: 25vw;
+        font-size: 2.9vw;
+      }
+    }
+  }
+}
+
+// <!-- ============ HERO END ================ -->
+// <!-- ============ ABOUT START ================ -->
+.about_container {
+  h1,
+  p {
+    font-family: OptimaLight;
+  }
+
+  h1 {
+    @media screen and (max-width: 1400px) {
+      font-size: 4vw;
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: 6vw;
+    }
+  }
+}
+
+// <!-- ============ ABOUT END ================ -->
+// <!-- ============ ARRIVAL START ================ -->
+.arrival_cont {
+  margin-top: 5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// <!-- ============ ARRIVAL END ================ -->
+// <!-- ============ SLIDER START ================ -->
+.slider_container {
+  margin-top: -3.5vw;
+
+  @media screen and (max-width: 767px) {
+    margin-top: -10.5vw;
+  }
+
+  @media screen and (max-width: 399px) {
+    margin-top: -19.5vw;
+  }
+
+  h4,
+  p {
+    font-family: "OptimaLight";
+  }
+
+  h4 {
+    font: 24px;
+
+    @media screen and (max-width: 1400px) {
+      font-size: 1.7vw;
+    }
+
+    @media screen and (max-width: 575px) {
+      font-size: 4vw;
+    }
+
+    @media screen and (max-width: 399px) {
+      font-size: 6vw;
+    }
+  }
+
+  p {
+    font-family: "OptimaLight";
+    max-width: 235px;
+    margin-left: auto;
+    margin-right: auto;
+    font: 16px;
+
+    // @media screen and (max-width: 1400px) {
+    font-size: 1.13vw;
+    max-width: 17vw;
+    // }
+
+    @media screen and (max-width: 575px) {
+      font-size: 2.4vw;
+      max-width: 35vw;
+    }
+
+    @media screen and (max-width: 399px) {
+      font-size: 4vw;
+      max-width: 80vw;
+    }
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 50%;
+    margin: auto;
+    height: 100%;
+    object-fit: contain;
+
+    @media screen and (max-width: 575px) {
+      width: 100%;
+    }
+  }
+  .swiper-button-next {
+    padding-top: 2px;
+    padding-left: 2px;
+  }
+  .swiper-button-prev {
+    padding-top: 2px;
+    padding-right: 2px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    background: #c9b89b7a;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 10px;
+    color: #604e39;
+    font-weight: 900;
+
+    @media screen and (max-width: 575px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 1.4rem;
+
+    @media screen and (max-width: 575px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+// <!-- ============ SLIDER END ================ -->
+
+// <!-- ============ NEED HELP START ================ -->
+
+.need_help {
+  margin: 13rem 0;
+
+  @media screen and (max-width: 767px) {
+    margin: 4rem 0;
+  }
+
+  img {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+
+    @media screen and (max-width: 767px) {
+      width: 75%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (max-width: 575px) {
+      width: 100%;
+    }
+  }
+
+  .text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+
+      @media screen and (max-width: 1400px) {
+        font-size: 3.5vw;
+      }
+
+      @media screen and (max-width: 767px) {
+        font-size: 5.8vw;
+      }
+    }
+
+    p {
+      font-size: 1.25rem;
+      font-family: "OptimaLight";
+
+      @media screen and (max-width: 1400px) {
+        font-size: 1.45vw;
+      }
+
+      @media screen and (max-width: 767px) {
+        font-size: 3vw;
+      }
+    }
+    .bg {
+      position: absolute;
+      background: $color4;
+      right: 0;
+      top: -4rem;
+      bottom: -4rem;
+      left: -7rem;
+      opacity: 0.15;
+      border-radius: 25px;
+      pointer-events: none;
+
+      @media screen and (max-width: 767px) {
+        left: -2rem;
+        right: -2rem;
+      }
+    }
+
+    .outlined-btn {
+      @media screen and (max-width: 575px) {
+        font-size: 3vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+      }
+    }
+  }
+}
+
+// <!-- ============ NEED HELP END ================ -->
+
+// <!-- ============ GEMSTONE START ================ -->
+.gemstone_container {
+  padding: 10rem 0rem;
+  background: url(../images/gemstoneJewe.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media screen and (max-width: 767px) {
+    padding: 7rem 0rem;
+  }
+
+  .inner_gemstone {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  h1 {
+    @media screen and (max-width: 795px) {
+      font-size: 5vw;
+    }
+  }
+
+  p {
+    @media screen and (max-width: 795px) {
+      font-size: 2vw;
+      max-width: 60vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  button {
+    border: 1px solid #49341c;
+    padding: 0.6rem 2rem;
+    background-color: transparent;
+    color: #49341c;
+
+    @media screen and (max-width: 795px) {
+      font-size: 12px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
+
+// <!-- ============ GEMSTONE END ================ -->
+// <!-- ============ EXPLORE START ================ -->
+.explore_container {
+  margin-top: 2rem;
+
+  h3 {
+    @media screen and (max-width: 1400px) {
+      font-size: 2vw;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 5vw;
+    }
+
+    @media screen and (max-width: 575px) {
+      font-size: 8vw;
+    }
+  }
+
+  p {
+    @media screen and (max-width: 1400px) {
+      font-size: 1.15vw;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 1.8vw;
+    }
+
+    @media screen and (max-width: 575px) {
+      font-size: 3vw;
+    }
+  }
+
+  .sub-heading {
+    font-size: 1.25rem;
+    font-family: "OptimaLight";
+  }
+
+  .outlined-btn {
+    font-size: 2.25rem;
+
+    @media screen and (max-width: 767px) {
+      font-size: 1.5rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+}
+
+// <!-- ============ EXPLORE END ================ -->
+// <!-- ============ NEWSLETTER START ================ -->
+.newsletter_container {
+  margin-top: 4rem;
+  background: url(../images/newsletter.svg);
+  padding: 10rem 0rem;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media screen and (max-width: 767px) {
+    padding: 3rem 0rem;
+  }
+
+  .news_inner {
+    max-width: 640px;
+    margin-left: auto;
+
+    h1 {
+      @media screen and (max-width: 590px) {
+        font-size: 5vw;
+      }
+    }
+
+    p {
+      @media screen and (max-width: 590px) {
+        font-size: 2.5vw;
+      }
+    }
+
+    h1,
+    p {
+      margin-bottom: 0;
+    }
+
+    p {
+      max-width: 500px;
+    }
+  }
+  .inp_container {
+    @media screen and (max-width: 590px) {
+      display: flex;
+      align-items: space-between;
+    }
+
+    input {
+      height: 42px;
+      width: 300px;
+      background: transparent;
+      border: 1px solid #49341c;
+      border-radius: 3px;
+
+      @media screen and (max-width: 590px) {
+        width: 51vw;
+      }
+    }
+    button {
+      height: 42px;
+      background-color: #49341c;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+
+      @media screen and (max-width: 590px) {
+        font-size: 2.5vw;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+// <!-- ============ NEWSLETTER END ================ -->
+
+// <!-- ============ FOOTER START ================ -->
+
+.footer_container {
+  padding-top: 5rem;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 0;
+  }
+
+  * {
+    color: $color3;
+  }
+
+  img {
+    width: 100%;
+
+    @media screen and (max-width: 767px) {
+      width: 150px;
+      margin-left: unset !important;
+    }
+  }
+
+  h4 {
+    @media screen and (max-width: 960px) {
+      font-size: 18px;
+    }
+  }
+
+  .social {
+    margin-top: 2rem;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+      text-align: left;
+    }
+
+    img {
+      width: 25px;
+      margin: 0 0.25rem;
+    }
+  }
+
+  .nav {
+    .nav-item {
+      display: block;
+      width: 100%;
+      margin: 0.25rem 0;
+
+      a {
+        text-decoration: none;
+
+        @media screen and (max-width: 960px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .payment-methods {
+    img {
+      display: block;
+      margin-bottom: 1rem;
+      margin-left: auto;
+      max-width: 90px;
+
+      @media screen and (max-width: 767px) {
+        display: inline;
+        max-width: 60px;
+        margin: 0 1rem;
+      }
+    }
+  }
+
+  .legal {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (max-width: 575px) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 1rem;
+    }
+
+    li {
+      list-style: none;
+      margin: 0 1rem;
+
+      a {
+        text-decoration: none;
+        font-size: 14px;
+
+        @media screen and (max-width: 767px) {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
