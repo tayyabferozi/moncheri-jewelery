@@ -250,6 +250,46 @@ body {
   }
 }
 
+.dropdown-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 2rem;
+  margin: 0 2rem;
+  -webkit-box-shadow: 0 4px 11px #cbcbcb;
+          box-shadow: 0 4px 11px #cbcbcb;
+  -webkit-box-flex: unset !important;
+      -ms-flex: unset !important;
+          flex: unset !important;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-toggle.show img {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.dropdown-toggle .text {
+  margin-right: 1rem;
+}
+
+.dropdown-toggle img {
+  width: 17px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
 .upper_header_container {
   /*To remove button from IE11, thank you Matt */
 }
@@ -893,6 +933,241 @@ body {
   .newsletter_container .inp_container button {
     font-size: 2.5vw;
     margin-left: 5px;
+  }
+}
+
+.hero_products_container {
+  background-image: url("../images/bg-products-hero.png");
+  background-size: cover;
+  height: 278px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero_products_container * {
+  color: #fff;
+}
+
+.hero_products_container p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.products_container .filters-container {
+  margin: 1rem 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.products_container .filters-container .dropdown-toggle {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.products_container .filters-container .dropdown-toggle:focus {
+  -webkit-box-shadow: 0 3px 11px #cbcbcb;
+          box-shadow: 0 3px 11px #cbcbcb;
+}
+
+.products_container .filters-container .dropdown-menu {
+  border: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  -webkit-box-shadow: 0 10px 11px #cbcbcb;
+          box-shadow: 0 10px 11px #cbcbcb;
+  top: -2px !important;
+}
+
+.products_container .filters-container .dropdown-menu li {
+  padding: 1rem;
+}
+
+.products_container .filters-container .dropdown-menu li .prices-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #9b795b;
+}
+
+.products_container .filters-container .dropdown-menu li .prices-container > div {
+  padding: 0 0.5rem;
+  width: 200px;
+  border: 1px solid #9b795b;
+}
+
+.products_container .filters-container .dropdown-menu li .prices-container > div:first-child {
+  margin-right: 2rem;
+}
+
+.products_container .filters-container .dropdown-menu li.ranger {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.products_container #filters-names {
+  color: #9b795b;
+  margin-left: 2rem;
+}
+
+.products_container .product-card {
+  -webkit-box-shadow: 0 3px 11px #cbcbcb;
+          box-shadow: 0 3px 11px #cbcbcb;
+  padding: 0 1.5rem 1.5rem;
+  margin: 1rem 0;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .products_container .product-card {
+    padding: 0 1.5vw 1.5vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .products_container .product-card {
+    padding: 0 2.5vw 2.5vw;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .products_container .product-card {
+    padding: 0 4vw 4vw;
+  }
+}
+
+.products_container .product-card .product-slider img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.products_container .product-card .product-details * {
+  color: #4f3b24;
+}
+
+.products_container .product-card .product-details .reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products_container .product-card .product-details .reviews img {
+  width: 15px;
+  margin-right: 0.25rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .products_container .product-card .product-details .reviews img {
+    width: 1.125vw;
+    margin-right: 0.25vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .products_container .product-card .product-details .reviews img {
+    width: 1.5vw;
+    margin-right: 0.325vw;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .products_container .product-card .product-details .reviews img {
+    width: 2.3vw;
+    margin-right: 0.4vw;
+  }
+}
+
+.products_container .product-card .product-details .reviews span {
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .products_container .product-card .product-details .reviews span {
+    font-size: 0.85vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .products_container .product-card .product-details .reviews span {
+    font-size: 1.2vw;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .products_container .product-card .product-details .reviews span {
+    font-size: 1.8vw;
+  }
+}
+
+.products_container .product-card .product-details h3 {
+  font-family: OptimaLight;
+  margin-bottom: 0;
+  margin-top: 0.25rem;
+  font-size: 1.125rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .products_container .product-card .product-details h3 {
+    font-size: 1.3vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .products_container .product-card .product-details h3 {
+    font-size: 1.7vw;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .products_container .product-card .product-details h3 {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .products_container .product-card .product-details h2 {
+    font-size: 2.2vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .products_container .product-card .product-details h2 {
+    font-size: 2.6vw;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .products_container .product-card .product-details h2 {
+    font-size: 5vw;
   }
 }
 

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ===========================  EXTERNAL START  =============================== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/style/utilities.css" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- ===========================  EXTERNAL END  =============================== -->
+    <title>Home Page</title>
+  </head>
+
+  <body>
+    <!-- ===========================  UPPER HEADER START  =============================== -->
+    <section class="upper_header_container mt-1">
+      <div class="page_container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-md-12 mx-auto">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                  <img
+                    class="world_icon"
+                    src="./assets/images/world.svg"
+                    alt=""
+                  />
+                  <div class="selectdiv">
+                    <label>
+                      <select
+                        class="border-0 bg-transparent mb-0 ms-2"
+                        name=""
+                        id=""
+                      >
+                        <option value="">ITN</option>
+                        <option value="">ENG</option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <img src="./assets/images/avtar.svg" alt="" />
+                  <p class="mb-0 ms-3">SIGN IN/ REGISTER</p>
+                  <img class="ms-3" src="./assets/images/cart.svg" alt="" />
+                  <img
+                    class="search_icon ms-3"
+                    src="./assets/images/search.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===========================  UPPER HEADER END  =============================== -->
+
+    <!-- ===========================  HEADER START  =============================== -->
+    <section class="header_container mt-1">
+      <div class="page_container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-md-12 mx-auto">
+              <div class="logo_container">
+                <img class="w-100" src="./assets/images/logo.png" alt="" />
+              </div>
+            </div>
+
+            <div class="mt-3">
+              <ul class="list-unstyled d-flex justify-content-between">
+                <li class="active">
+                  <a class="text-decoration-none" href="">ENGAGEMENT</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">EARRINGS</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">RINGS</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">GIFT</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">NECKLECES</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">BRACELET</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===========================  HEADER END  =============================== -->
+
+    <!-- ===========================  HERO START  =============================== -->
+
+    <section class="hero_products_container">
+      <h1>ENGAGEMENT</h1>
+      <p>
+        Search hundreds of engagement ring settings to find the perfect ring.
+        Styles range from solitaire to vintage-inspired to everything in
+        between. Start designing your own custom engagement ring with
+        handcrafted ring settings built to last a lifetime.
+      </p>
+    </section>
+
+    <!-- ===========================  HERO END  =============================== -->
+
+    <!-- ===========================  PRODUCTS START  =============================== -->
+    <section class="products_container">
+      <div class="page_container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="btn-group flex-wrap filters-container">
+              <button
+                class="btn dropdown-toggle"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="text">Price Filter </span>
+                <img src="./assets/images/dropdown-up.png" alt="dropdown-img" />
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <div class="prices-container">
+                    <div>
+                      <span> Min: Price</span>
+                      <h3 id="min-price-filter">0.00</h3>
+                    </div>
+                    <div>
+                      <span> Max: Price</span>
+                      <h3 id="max-price-filter">0.00</h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="ranger">
+                  <span class="multi-range">
+                    <input
+                      type="range"
+                      min="0"
+                      max="1000"
+                      value="5"
+                      id="lower"
+                    />
+                    <input
+                      type="range"
+                      min="0"
+                      max="1000"
+                      value="100"
+                      id="upper"
+                    />
+                  </span>
+                </li>
+              </ul>
+
+              <button
+                class="btn dropdown-toggle"
+                id="dropdownMenuButton2"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="text">Gemstones </span>
+                <img src="./assets/images/dropdown-up.png" alt="dropdown-img" />
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+              </ul>
+
+              <button
+                class="btn dropdown-toggle"
+                id="dropdownMenuButton3"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="text">Diamond Shape </span>
+                <img src="./assets/images/dropdown-up.png" alt="dropdown-img" />
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+              </ul>
+
+              <button
+                class="btn dropdown-toggle"
+                id="dropdownMenuButton4"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="text">Sort By </span>
+                <img src="./assets/images/dropdown-up.png" alt="dropdown-img" />
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+              </ul>
+            </div>
+
+            <div class="results-info">
+              <h2>
+                Results - <span id="result-count">0</span>
+                <span id="filters-names">No Filters Applied</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===========================  PRODUCTS END  =============================== -->
+
+    <!-- ===========================  NEWSLETTER START  =============================== -->
+    <section class="newsletter_container">
+      <div class="page_container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-11 col-md-12 mx-auto">
+              <div class="news_inner">
+                <h1>Get The Latest From MonCheri!</h1>
+                <p class="color1">
+                  Join our mailing list & receive updates on new products,
+                  Latest blog posts & more Lorem ipsum dolor sit amet.
+                </p>
+                <div class="inp_container">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Enter your email"
+                    class="px-2 f18"
+                  />
+                  <button class="px-4">SIGN UP</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===========================  NEWSLETTER END  =============================== -->
+
+    <!-- ===========================  FOOTER START  =============================== -->
+    <section class="footer_container">
+      <div class="page_container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-11 col-md-12 mx-auto">
+              <div class="row">
+                <div class="my-4 my-md-0 col-md-3">
+                  <img
+                    class="d-block mx-auto"
+                    src="./assets/images/logo2.png"
+                    alt=""
+                  />
+
+                  <div class="social">
+                    <img src="./assets/images/facebook.svg" alt="" />
+                    <img src="./assets/images/twitter.svg" alt="" />
+                    <img src="./assets/images/instagram.svg" alt="" />
+                    <img src="./assets/images/linkedin.svg" alt="" />
+                  </div>
+                </div>
+                <div class="my-4 my-md-0 col-md-4 ps-3 ps-md-5">
+                  <h4>Explore</h4>
+
+                  <ul class="nav">
+                    <li class="nav-item"><a href="#">ENGAGEMENT</a></li>
+                    <li class="nav-item"><a href="#">EARRINGS</a></li>
+                    <li class="nav-item"><a href="#">RINGS</a></li>
+                    <li class="nav-item">
+                      <a href="#">BRACELETS & BANGLES</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="my-4 my-md-0 col-md-2">
+                  <h4>Our Story</h4>
+
+                  <ul class="nav">
+                    <li class="nav-item"><a href="#">About MonCheri</a></li>
+                    <li class="nav-item"><a href="#">Media</a></li>
+                  </ul>
+                </div>
+                <div class="my-4 my-md-0 col-md-3 payment-methods">
+                  <img src="./assets/images/visa.svg" alt="visa" />
+                  <img src="./assets/images/mastercard.svg" alt="mastercard" />
+                  <img src="./assets/images/paypal.svg" alt="paypal" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="legal">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Copyright &copy; 2021 MonCheri</a></li>
+            <li><a href="#">Coperate</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ===========================  FOOTER END  =============================== -->
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/products.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
