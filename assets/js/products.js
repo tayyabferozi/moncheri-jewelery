@@ -11,112 +11,112 @@ let filters = {
 const products = [
   {
     reviewsCount: 4,
-    ratings: 4,
+    ratingsCount: 4,
     img: "diamond-silver-ring.png",
     name: "Diamond Silver Ring",
     price: 9.99,
   },
   {
     reviewsCount: 4,
-    ratings: 4,
+    ratingsCount: 4,
     img: "necklace.png",
     name: "Necklace",
     price: 15.99,
   },
   {
     reviewsCount: 4,
-    ratings: 4,
+    ratingsCount: 4,
     img: "diamond-bracelet.png",
     name: "Bracelet",
     price: 20.99,
   },
   {
     reviewsCount: 4,
-    ratings: 4,
+    ratingsCount: 4,
     img: "diamond-ring.png",
     name: "Ring",
     price: 40.99,
   },
   {
     reviewsCount: 4,
-    ratings: 4,
+    ratingsCount: 4,
     img: "diamond-silver-ring.png",
     name: "Diamond Silver Ring",
     price: 50.99,
   },
   {
     reviewsCount: 4,
-    ratings: 4,
+    ratingsCount: 4,
     img: "necklace.png",
     name: "Necklace",
     price: 80.99,
   },
   {
     reviewsCount: 4,
-    ratings: 4,
+    ratingsCount: 4,
     img: "diamond-bracelet.png",
     name: "Bracelet",
     price: 89.99,
   },
   {
     reviewsCount: 4,
-    ratings: 4,
+    ratingsCount: 4,
     img: "diamond-ring.png",
     name: "Ring",
     price: 125.99,
   },
   {
     reviewsCount: 4,
-    ratings: 4,
+    ratingsCount: 4,
     img: "diamond-silver-ring.png",
     name: "Diamond Silver Ring",
     price: 160.99,
   },
   {
     reviewsCount: 4,
-    ratings: 4,
+    ratingsCount: 4,
     img: "necklace.png",
     name: "Necklace",
     price: 190.99,
   },
   {
     reviewsCount: 4,
-    ratings: 4,
+    ratingsCount: 4,
     img: "diamond-bracelet.png",
     name: "Bracelet",
     price: 230.99,
   },
   {
     reviewsCount: 4,
-    ratings: 4,
+    ratingsCount: 4,
     img: "diamond-ring.png",
     name: "Ring",
     price: 250.99,
   },
   {
     reviewsCount: 4,
-    ratings: 4,
+    ratingsCount: 4,
     img: "diamond-silver-ring.png",
     name: "Diamond Silver Ring",
     price: 290.99,
   },
   {
     reviewsCount: 4,
-    ratings: 4,
+    ratingsCount: 4,
     img: "necklace.png",
     name: "Necklace",
     price: 350.99,
   },
   {
     reviewsCount: 4,
-    ratings: 4,
+    ratingsCount: 4,
     img: "diamond-bracelet.png",
     name: "Bracelet",
     price: 380.99,
   },
   {
     reviewsCount: 4,
-    ratings: 4,
+    ratingsCount: 4,
     img: "diamond-ring.png",
     name: "Ring",
     price: 400.99,
@@ -187,37 +187,43 @@ function showProductsOnDOM(prods) {
     filteredProducts = prods;
   }
   filteredProducts.forEach((el) => {
+    let { reviewsCount, ratingsCount, img, name, price } = el;
+
+    let reviewsMarkup = "";
+
+    for (let i = 0; i < reviewsCount; i++) {
+      reviewsMarkup += `<img src="./assets/images/star-fill.png" alt="" />`;
+    }
+
+    for (let i = 0; i < 5 - reviewsCount; i++) {
+      reviewsMarkup += `<img src="./assets/images/star-no-fill.png" alt="" />`;
+    }
+
     productsMarkup += `
-  <div class="col-6 col-sm-4 col-md-3">
-  <div class="product-card">
-  <div class="product-slider">
-  <img
-  src="./assets/images/${el.img}"
-  alt=""
-  />
-  </div>
-  <div class="product-details">
-  <div class="reviews">
-  <img src="./assets/images/star-fill.png" alt="" />
-  <img src="./assets/images/star-fill.png" alt="" />
-  <img src="./assets/images/star-fill.png" alt="" />
-  <img src="./assets/images/star-fill.png" alt="" />
-  <img src="./assets/images/star-no-fill.png" alt="" />
-  <span>(4 Customer Review)</span>
-  </div>
-  <h3>${el.name}</h3>
-  <h2>${el.price}</h2>
-  </div>
-  </div>
-  </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="product-card">
+          <div class="product-slider">
+            <img
+              src="./assets/images/${img}"
+              alt=""
+              />
+          </div>
+          <div class="product-details">
+            <div class="reviews">
+              ${reviewsMarkup}
+              <span>(${ratingsCount} Customer Review)</span>
+            </div>
+              <h3>${name}</h3>
+              <h2>$${price}</h2>
+          </div>
+        </div>
+      </div>
   `;
   });
 
   $(".products_container .row").append(productsMarkup);
   $("#result-count").html(filteredProducts.length);
   const filtersLen = Object.keys(filters).length;
-
-  console.log(filtersLen > 0);
 
   $("#filters-names").html(
     `${
