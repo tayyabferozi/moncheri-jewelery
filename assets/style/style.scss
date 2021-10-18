@@ -82,6 +82,12 @@ body {
   font-family: Optima;
 }
 
+a {
+  &:hover {
+    color: $color6;
+  }
+}
+
 section {
   @media screen and (max-width: 1350px) {
     padding-left: 3rem;
@@ -1537,10 +1543,6 @@ section {
 
       a {
         text-decoration: none;
-
-        &:hover {
-          color: $color6;
-        }
 
         @media screen and (max-width: 960px) {
           font-size: 12px;

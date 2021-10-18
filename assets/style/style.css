@@ -76,6 +76,10 @@ body {
   font-family: Optima;
 }
 
+a:hover {
+  color: #9b795b;
+}
+
 @media screen and (max-width: 1350px) {
   section {
     padding-left: 3rem;
@@ -1690,10 +1694,6 @@ body {
 
 .footer_container .nav .nav-item a {
   text-decoration: none;
-}
-
-.footer_container .nav .nav-item a:hover {
-  color: #9b795b;
 }
 
 @media screen and (max-width: 960px) {
