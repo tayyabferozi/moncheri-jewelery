@@ -39,6 +39,13 @@ $color3: #49341c;
 $color4: #c9b89b;
 $color5: #4f3b24;
 $color6: #9b795b;
+$color7: #d7d3ca;
+$color8: #e0cd94;
+$color9: #e2bfaf;
+$color10: #604e39;
+$color11: #5f4d38;
+$color12: #493220;
+
 // VARIABLES END
 // GLOBAL START
 html {
@@ -198,6 +205,7 @@ section {
 
 .fw500 {
   font-weight: 500;
+  font-family: OptimaLight;
 }
 
 .fw600 {
@@ -243,6 +251,29 @@ section {
   }
 }
 
+.swiper {
+  padding: 0 0.25rem;
+}
+
+.text-brown {
+  color: $color6 !important;
+}
+
+.bottom-bordered {
+  border-bottom: 1px solid $color12;
+}
+
+.breadcrumb {
+  * {
+    color: $color5;
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: url("../images/breadcrumb-arrow.png");
+  margin: 0 0.5rem;
+}
+
 .dropdown-toggle {
   display: flex;
   justify-content: center;
@@ -273,7 +304,7 @@ section {
   }
 }
 
-// <!-- ============ UPPER HEADER START ================ -->
+// <!--============================================ UPPER HEADER START================================================ -->
 .upper_header_container {
   img {
     width: 20px;
@@ -327,8 +358,8 @@ section {
   }
 }
 
-// <!-- ============ UPPER HEADER END ================ -->
-// <!-- ============ HEADER START ================ -->
+// <!--============================================ UPPER HEADER END================================================ -->
+// <!--============================================ HEADER START================================================ -->
 .header_container {
   .logo_container {
     max-width: 320px;
@@ -348,7 +379,7 @@ section {
         bottom: -1rem;
         left: 50%;
         transform: translateX(-50%);
-        background-color: #493220;
+        background-color: $color12;
       }
     }
   }
@@ -365,9 +396,9 @@ section {
   }
 }
 
-// <!-- ============ HEADER END ================ -->
+// <!--============================================ HEADER END================================================ -->
 
-// <!-- ============ HERO START ================ -->
+// <!--============================================ HERO START================================================ -->
 .hero_container {
   background: url(../images/hero.png);
   background-repeat: no-repeat;
@@ -446,8 +477,8 @@ section {
   }
 }
 
-// <!-- ============ HERO END ================ -->
-// <!-- ============ ABOUT START ================ -->
+// <!--============================================ HERO END================================================ -->
+// <!--============================================ ABOUT START================================================ -->
 .about_container {
   h1,
   p {
@@ -465,16 +496,16 @@ section {
   }
 }
 
-// <!-- ============ ABOUT END ================ -->
-// <!-- ============ ARRIVAL START ================ -->
+// <!--============================================ ABOUT END================================================ -->
+// <!--============================================ ARRIVAL START================================================ -->
 .arrival_cont {
   margin-top: 5rem;
   padding-left: 0;
   padding-right: 0;
 }
 
-// <!-- ============ ARRIVAL END ================ -->
-// <!-- ============ SLIDER START ================ -->
+// <!--============================================ ARRIVAL END================================================ -->
+// <!--============================================ SLIDER START================================================ -->
 .slider_container {
   margin-top: -3.5vw;
 
@@ -556,7 +587,7 @@ section {
     height: 46px;
     border-radius: 50%;
     font-size: 10px;
-    color: #604e39;
+    color: $color10;
     font-weight: 900;
 
     @media screen and (max-width: 575px) {
@@ -574,9 +605,9 @@ section {
   }
 }
 
-// <!-- ============ SLIDER END ================ -->
+// <!--============================================ SLIDER END================================================ -->
 
-// <!-- ============ NEED HELP START ================ -->
+// <!--============================================ NEED HELP START================================================ -->
 
 .need_help {
   margin: 13rem 0;
@@ -664,9 +695,9 @@ section {
   }
 }
 
-// <!-- ============ NEED HELP END ================ -->
+// <!--============================================ NEED HELP END================================================ -->
 
-// <!-- ============ GEMSTONE START ================ -->
+// <!--============================================ GEMSTONE START================================================ -->
 .gemstone_container {
   padding: 10rem 0rem;
   background: url(../images/gemstoneJewe.svg);
@@ -701,10 +732,10 @@ section {
   }
 
   button {
-    border: 1px solid #49341c;
+    border: 1px solid $color3;
     padding: 0.6rem 2rem;
     background-color: transparent;
-    color: #49341c;
+    color: $color3;
 
     @media screen and (max-width: 795px) {
       font-size: 12px;
@@ -714,8 +745,8 @@ section {
   }
 }
 
-// <!-- ============ GEMSTONE END ================ -->
-// <!-- ============ EXPLORE START ================ -->
+// <!--============================================ GEMSTONE END================================================ -->
+// <!--============================================ EXPLORE START================================================ -->
 .explore_container {
   margin-top: 2rem;
 
@@ -763,8 +794,9 @@ section {
   }
 }
 
-// <!-- ============ EXPLORE END ================ -->
-// <!-- ============ NEWSLETTER START ================ -->
+// <!--============================================ EXPLORE END================================================ -->
+
+// <!--============================================ NEWSLETTER START================================================ -->
 .newsletter_container {
   margin-top: 4rem;
   background: url(../images/newsletter.svg);
@@ -814,7 +846,7 @@ section {
       height: 42px;
       width: 300px;
       background: transparent;
-      border: 1px solid #49341c;
+      border: 1px solid $color3;
       border-radius: 3px;
 
       @media screen and (max-width: 590px) {
@@ -823,7 +855,7 @@ section {
     }
     button {
       height: 42px;
-      background-color: #49341c;
+      background-color: $color3;
       color: #fff;
       border: none;
       border-radius: 3px;
@@ -836,9 +868,9 @@ section {
   }
 }
 
-// <!-- ============ NEWSLETTER END ================ -->
+// <!--============================================ NEWSLETTER END================================================ -->
 
-// <!-- ============ HERO PRODUCTS START ================ -->
+// <!--============================================ HERO PRODUCTS START================================================ -->
 
 .hero_products_container {
   background-image: url("../images/bg-products-hero.png");
@@ -861,9 +893,9 @@ section {
   }
 }
 
-// <!-- ============ HERO PRODUCTS END ================ -->
+// <!--============================================ HERO PRODUCTS END================================================ -->
 
-// <!-- ============ PRODUCTS END ================ -->
+// <!--============================================ PRODUCTS END================================================ -->
 
 .products_container {
   .filters-container {
@@ -873,6 +905,16 @@ section {
     .dropdown-toggle {
       margin-top: 1rem;
       margin-bottom: 1rem;
+
+      .text {
+        font-size: 20px;
+      }
+
+      &.show {
+        .text {
+          color: $color6;
+        }
+      }
 
       &:focus {
         box-shadow: 0 3px 11px #cbcbcb;
@@ -895,12 +937,16 @@ section {
           color: $color6;
 
           & > div {
-            padding: 0 0.5rem;
+            padding: 0 0.5rem 0;
             width: 200px;
             border: 1px solid $color6;
 
+            span {
+              font-size: 14px;
+            }
+
             &:first-child {
-              margin-right: 2rem;
+              margin-right: 1rem;
             }
           }
         }
@@ -917,122 +963,421 @@ section {
     color: $color6;
     margin-left: 2rem;
   }
+}
 
-  .product-card {
-    box-shadow: 0 3px 11px #cbcbcb;
-    padding: 0 1.5rem 1.5rem;
-    margin: 1rem 0;
-    border-radius: 20px;
+.product-card {
+  box-shadow: 0 3px 11px #cbcbcb;
+  padding: 0 1.5rem 1.5rem;
+  margin: 1rem 0;
+  border-radius: 20px;
 
-    @media screen and (max-width: 1400px) {
-      padding: 0 1.5vw 1.5vw;
+  @media screen and (max-width: 1400px) {
+    padding: 0 1.5vw 1.5vw;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 0 2.5vw 2.5vw;
+    border-radius: 15px;
+  }
+
+  @media screen and (max-width: 575px) {
+    padding: 0 4vw 4vw;
+  }
+
+  .product-slider {
+    img {
+      width: 80%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .product-details {
+    * {
+      color: $color5;
     }
 
-    @media screen and (max-width: 767px) {
-      padding: 0 2.5vw 2.5vw;
-      border-radius: 15px;
-    }
+    .reviews {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
 
-    @media screen and (max-width: 575px) {
-      padding: 0 4vw 4vw;
-    }
-
-    .product-slider {
       img {
-        width: 80%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        width: 15px;
+        margin-right: 0.25rem;
+
+        @media screen and (max-width: 1400px) {
+          width: 1.125vw;
+          margin-right: 0.25vw;
+        }
+
+        @media screen and (max-width: 767px) {
+          width: 1.5vw;
+          margin-right: 0.325vw;
+        }
+
+        @media screen and (max-width: 575px) {
+          width: 2.3vw;
+          margin-right: 0.4vw;
+        }
+      }
+
+      span {
+        font-size: 0.75rem;
+        margin-left: 0.5rem;
+
+        @media screen and (max-width: 1400px) {
+          font-size: 0.85vw;
+        }
+
+        @media screen and (max-width: 767px) {
+          font-size: 1.2vw;
+        }
+
+        @media screen and (max-width: 575px) {
+          font-size: 1.8vw;
+        }
       }
     }
 
-    .product-details {
-      * {
-        color: $color5;
+    h3 {
+      font-family: OptimaLight;
+      margin-bottom: 0;
+      margin-top: 0.25rem;
+      font-size: 1.125rem;
+
+      @media screen and (max-width: 1400px) {
+        font-size: 1.3vw;
       }
 
-      .reviews {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-
-        img {
-          width: 15px;
-          margin-right: 0.25rem;
-
-          @media screen and (max-width: 1400px) {
-            width: 1.125vw;
-            margin-right: 0.25vw;
-          }
-
-          @media screen and (max-width: 767px) {
-            width: 1.5vw;
-            margin-right: 0.325vw;
-          }
-
-          @media screen and (max-width: 575px) {
-            width: 2.3vw;
-            margin-right: 0.4vw;
-          }
-        }
-
-        span {
-          font-size: 0.75rem;
-          margin-left: 0.5rem;
-
-          @media screen and (max-width: 1400px) {
-            font-size: 0.85vw;
-          }
-
-          @media screen and (max-width: 767px) {
-            font-size: 1.2vw;
-          }
-
-          @media screen and (max-width: 575px) {
-            font-size: 1.8vw;
-          }
-        }
+      @media screen and (max-width: 767px) {
+        font-size: 1.7vw;
       }
 
-      h3 {
-        font-family: OptimaLight;
-        margin-bottom: 0;
-        margin-top: 0.25rem;
-        font-size: 1.125rem;
+      @media screen and (max-width: 575px) {
+        font-size: 3vw;
+      }
+    }
 
-        @media screen and (max-width: 1400px) {
-          font-size: 1.3vw;
-        }
-
-        @media screen and (max-width: 767px) {
-          font-size: 1.7vw;
-        }
-
-        @media screen and (max-width: 575px) {
-          font-size: 3vw;
-        }
+    h2 {
+      @media screen and (max-width: 1400px) {
+        font-size: 2.2vw;
       }
 
-      h2 {
-        @media screen and (max-width: 1400px) {
+      @media screen and (max-width: 767px) {
+        font-size: 2.6vw;
+      }
+
+      @media screen and (max-width: 575px) {
+        font-size: 5vw;
+      }
+    }
+  }
+}
+
+// <!--============================================ PRODUCTS END================================================ -->
+
+// <!--============================================ PRODUCT START================================================ -->
+
+.product_container {
+  .product {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 11px #cbcbcb;
+    border-radius: 25px;
+    padding: 2vw 2vw 2vw 3vw;
+
+    * {
+      color: $color5;
+    }
+
+    & > div {
+      width: 50%;
+    }
+
+    .swiper-wrapper {
+      overflow: hidden;
+    }
+
+    .slider {
+      padding-right: 1rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .content {
+      padding-top: 0.5rem;
+      padding-left: 1rem;
+
+      .main {
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid $color6;
+
+        h3 {
+          margin-bottom: 0;
           font-size: 2.2vw;
+
+          .heart {
+            margin-left: 3vw;
+            width: 3vw;
+            transform: translateY(-0.5rem);
+          }
         }
 
-        @media screen and (max-width: 767px) {
-          font-size: 2.6vw;
+        .badge {
+          color: #fff;
+          border-radius: 0;
+          margin-left: 1vw;
+          background-color: $color6;
+          font-size: 1.25vw;
+          transform: translateY(-0.5rem);
         }
 
-        @media screen and (max-width: 575px) {
-          font-size: 5vw;
+        .reviews {
+          margin-top: 0.25rem;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          img {
+            width: 1.75vw;
+            margin-right: 0.25rem;
+          }
+
+          h5 {
+            margin-left: 0.5rem;
+            color: $color6;
+            margin-bottom: 0;
+            font-size: 1.25vw;
+          }
+        }
+      }
+
+      .info {
+        padding-top: 0.5rem;
+        border-bottom: 1px solid $color6;
+
+        p {
+          font-size: 1.5vw;
+          margin-bottom: 0.5rem;
+          font-family: "OptimaLight";
+        }
+      }
+
+      .additional {
+        margin-top: 0.5rem;
+        font-size: 1.3vw;
+
+        select {
+          margin-left: 3vw;
+        }
+
+        .caret-selectors {
+          margin-top: 0.5rem;
+
+          .btn {
+            border-radius: 50%;
+            width: 4vw;
+            height: 4vw;
+            font-size: 1.5vw;
+            border: 1px solid $color9;
+            padding: 0;
+
+            &:nth-child(1) {
+              border-color: $color7;
+            }
+
+            &:nth-child(2) {
+              border-color: $color8;
+            }
+          }
+        }
+
+        .btns {
+          margin-top: 1rem;
+
+          a {
+            text-decoration: none;
+            background-color: $color3;
+            color: #fff;
+            padding: 0.5rem 1rem;
+          }
         }
       }
     }
   }
 }
 
-// <!-- ============ PRODUCTS END ================ -->
+// <!--============================================ PRODUCT END================================================ -->
 
-// <!-- ============ FOOTER START ================ -->
+// <!--============================================ CARDS END================================================ -->
+
+.cards_container {
+  margin: 2rem 0;
+
+  .col-md-4 {
+    &:nth-child(1) {
+      .card {
+        padding-left: 2vw;
+        padding-right: 2vw;
+      }
+
+      .img {
+        width: 7.5vw;
+      }
+    }
+
+    &:nth-child(2) {
+      .card {
+        padding-left: 1vw;
+        padding-right: 1vw;
+      }
+
+      .i5g {
+        width: 5vw;
+      }
+    }
+
+    &:nth-child(3) {
+      .card {
+        padding-left: 2vw;
+        padding-right: 2vw;
+      }
+
+      .img {
+        width: 7vw;
+      }
+    }
+  }
+
+  .card {
+    box-shadow: 0 4px 11px #cbcbcb;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.5vw;
+
+    .img {
+      margin-right: 1.5rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .text {
+      h3 {
+        color: $color3;
+        margin-bottom: 0;
+        font-size: 2vw;
+      }
+
+      p {
+        color: $color1;
+        font-size: 1vw;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// <!--============================================ CARDS END================================================ -->
+
+// <!--============================================ SELECT DIAMOND START ================================================ -->
+
+.select_diamond_container {
+  margin: 4rem 0;
+
+  .filters {
+    h3 {
+      font-size: 2.2vw;
+    }
+
+    .extreme-values {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      & > div {
+        width: 9vw;
+        height: 4vw;
+        border: 1px solid $color6;
+        // padding: 0.5rem 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &:first-child {
+          margin-right: 2vw;
+        }
+
+        span {
+          font-size: 0.875vw;
+          text-align: center;
+          color: $color6;
+          display: block;
+        }
+
+        h4 {
+          margin: 0;
+          font-size: 1.25vw;
+          text-align: center;
+        }
+      }
+    }
+
+    .multi-range {
+      left: 0;
+      margin-top: 0.5rem;
+
+      input[type="range"]::-webkit-slider-thumb {
+        border: 1px solid #707070;
+        box-shadow: none;
+        background-color: #fff;
+      }
+    }
+    .btn {
+      margin-top: 1rem;
+      width: 10vw;
+      border: 1px solid $color3;
+      color: $color3;
+      border-radius: 0;
+      font-size: 1.5vw;
+      margin-left: auto;
+      display: block;
+    }
+
+    .size {
+      .extreme-values h4 {
+        font-size: 1.75vw;
+      }
+    }
+  }
+}
+
+// <!--============================================ SELECT DIAMOND END ================================================ -->
+
+// <!--============================================ SUGGESTIONS START ================================================ -->
+
+.suggestions_container {
+  margin: 3em 0;
+
+  span {
+    font: 0.5rem;
+  }
+}
+
+// <!--============================================ SUGGESTIONS END ================================================ -->
+
+// <!--============================================ FOOTER START================================================ -->
 
 .footer_container {
   padding-top: 5rem;

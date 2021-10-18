@@ -50,11 +50,15 @@ input[type="range"]::-webkit-slider-thumb::before {
   left: 50%;
   height: 50px;
   background-color: #fff;
+  display: block;
+  width: 100%;
+  height: 40px;
 }
 .multi-range input[type="range"] {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  width: 100%;
 }
 .multi-range input[type="range"]:nth-child(1)::-webkit-slider-thumb::before {
   background-color: red;

@@ -258,5 +258,3 @@ sliderHandler();
 //     $this.attr("style", styles);
 //   }, 1);
 // });
-
-$(".dropdown-menu").unbind();
