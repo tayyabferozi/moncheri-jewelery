@@ -245,8 +245,8 @@ section {
   text-decoration: none;
   cursor: pointer;
 
-  @media screen and (max-width: 576px) {
-    padding: 0.6rem 3rem;
+  @media screen and (max-width: 575px) {
+    padding: 0.6rem 2.5rem;
     font-size: 18px;
   }
 }
@@ -386,26 +386,40 @@ section {
     max-width: 320px;
     margin-left: auto;
     margin-right: auto;
+    display: block;
   }
 
-  li {
-    &.active {
-      position: relative;
+  ul {
+    margin-bottom: 0.5rem;
 
-      &::after {
-        content: "";
-        position: absolute;
-        width: 110%;
-        height: 2px;
-        bottom: -1rem;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: $color12;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0.25rem;
+    }
+
+    li {
+      &.active {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 110%;
+          height: 2px;
+          bottom: -0.5rem;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: $color12;
+
+          @media screen and (max-width: 767px) {
+            bottom: -0.35rem;
+          }
+        }
       }
     }
   }
   a {
     color: $color1;
+    font-size: 1.35vw;
 
     @media screen and (max-width: 767px) {
       font-size: 14px;
@@ -528,14 +542,14 @@ section {
 // <!--============================================ ARRIVAL END================================================ -->
 // <!--============================================ SLIDER START================================================ -->
 .slider_container {
-  margin-top: -3.5vw;
+  margin-top: -2vw;
 
-  @media screen and (max-width: 767px) {
-    margin-top: -10.5vw;
+  @media screen and (max-width: 575px) {
+    margin-top: -4.5vw;
   }
 
   @media screen and (max-width: 399px) {
-    margin-top: -19.5vw;
+    margin-top: -4.5vw;
   }
 
   h4,
@@ -565,11 +579,8 @@ section {
     margin-left: auto;
     margin-right: auto;
     font: 16px;
-
-    // @media screen and (max-width: 1400px) {
     font-size: 1.13vw;
     max-width: 17vw;
-    // }
 
     @media screen and (max-width: 575px) {
       font-size: 2.4vw;
@@ -584,13 +595,17 @@ section {
 
   .swiper-slide img {
     display: block;
-    width: 50%;
+    width: 30%;
     margin: auto;
     height: 100%;
     object-fit: contain;
 
     @media screen and (max-width: 575px) {
-      width: 100%;
+      width: 55%;
+    }
+
+    @media screen and (max-width: 399px) {
+      width: 25%;
     }
   }
   .swiper-button-next {
@@ -707,10 +722,13 @@ section {
     }
 
     .outlined-btn {
+      padding-left: 3rem;
+      padding-right: 3rem;
+
       @media screen and (max-width: 575px) {
-        font-size: 3vw;
-        padding-left: 4vw;
-        padding-right: 4vw;
+        font-size: 4vw;
+        padding-left: 7vw;
+        padding-right: 7vw;
       }
     }
   }
@@ -805,7 +823,9 @@ section {
   }
 
   .outlined-btn {
-    font-size: 2.25rem;
+    font-size: 2.5vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
 
     @media screen and (max-width: 767px) {
       font-size: 1.5rem;
@@ -1114,6 +1134,7 @@ section {
       position: relative;
       color: $color3;
       font-size: 2.25vw;
+      cursor: pointer;
 
       &.active {
         &::after {
@@ -1421,7 +1442,7 @@ section {
 // <!--============================================ SUGGESTIONS START ================================================ -->
 
 .suggestions_container {
-  margin: 3em 0;
+  margin: 3em 0 0;
 
   span {
     font: 0.5rem;
@@ -1481,7 +1502,6 @@ section {
 
     @media screen and (max-width: 767px) {
       width: 150px;
-      margin-left: unset !important;
     }
   }
 
@@ -1499,6 +1519,10 @@ section {
       text-align: left;
     }
 
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+
     img {
       width: 25px;
       margin: 0 0.25rem;
@@ -1514,6 +1538,10 @@ section {
       a {
         text-decoration: none;
 
+        &:hover {
+          color: $color6;
+        }
+
         @media screen and (max-width: 960px) {
           font-size: 12px;
         }
@@ -1526,7 +1554,7 @@ section {
       display: block;
       margin-bottom: 1rem;
       margin-left: auto;
-      max-width: 90px;
+      max-width: 55px;
 
       @media screen and (max-width: 767px) {
         display: inline;
