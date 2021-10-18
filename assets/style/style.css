@@ -1420,10 +1420,20 @@ a:hover {
 
 .product_container .product .slider {
   padding-right: 1rem;
+  position: relative;
 }
 
 .product_container .product .slider img {
   width: 100%;
+}
+
+.product_container .product .slider .mySwiper3 {
+  position: absolute;
+  bottom: 7rem;
+  width: 80%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .product_container .product .content {
