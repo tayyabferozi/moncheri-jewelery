@@ -942,6 +942,7 @@ a:hover {
 
 @media screen and (max-width: 767px) {
   .newsletter_container {
+    background-size: cover;
     padding: 3rem 0rem;
   }
 }

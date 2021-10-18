@@ -855,6 +855,7 @@ section {
   background-size: contain;
 
   @media screen and (max-width: 767px) {
+    background-size: cover;
     padding: 3rem 0rem;
   }
 
