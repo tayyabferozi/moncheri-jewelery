@@ -19,6 +19,11 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./assets/style/style.css" />
+    <style>
+      .page_container {
+        max-width: 1250px;
+      }
+    </style>
     <!-- ===========================  EXTERNAL END  =============================== -->
     <title>Diamond Silver Ring</title>
   </head>
@@ -116,7 +121,7 @@
     <!-- ===========================  HEADER END  =============================== -->
 
     <section class="page_container">
-      <div class="container-fluid mx-auto">
+      <div class="container-fluid mx-auto breadcrumb-container">
         <div class="row">
           <div class="col-12">
             <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
@@ -127,6 +132,18 @@
                   Diamond Silver Ring
                 </li>
               </ol>
+              <div class="social">
+                <a href="#"
+                  ><img src="./assets/images/facebook.svg" alt=""
+                /></a>
+                <a href="#"><img src="./assets/images/twitter.svg" alt="" /></a>
+                <a href="#"
+                  ><img src="./assets/images/instagram.svg" alt=""
+                /></a>
+                <a href="#"
+                  ><img src="./assets/images/linkedin.svg" alt=""
+                /></a>
+              </div>
             </nav>
           </div>
         </div>
@@ -134,6 +151,7 @@
     </section>
 
     <!-- ===========================  PRODUCT START  =============================== -->
+
     <section class="product_container">
       <div class="page_container">
         <div class="container-fluid">
@@ -164,7 +182,13 @@
                         class="heart"
                       />
                     </h3>
-                    <h3>$189.99 <span class="badge">New</span></h3>
+                    <h3>
+                      $189.99
+                      <span class="badge py-1"
+                        ><img src="./assets/images/van.png" alt="" /> Free
+                        Shipping, Free Return
+                      </span>
+                    </h3>
                     <div class="reviews">
                       <img src="./assets/images/star-fill.png" alt="" />
                       <img src="./assets/images/star-fill.png" alt="" />
@@ -182,7 +206,7 @@
                     </p>
                   </div>
                   <div class="additional">
-                    <div class="metal">
+                    <div class="metal fw-500">
                       Metal: <span class="text-brown">14kt White Gold</span>
 
                       <select name="Size" id="">
@@ -192,7 +216,7 @@
                     </div>
 
                     <div class="caret-selectors">
-                      <button class="btn">14K</button>
+                      <button class="btn active">14K</button>
                       <button class="btn">14K</button>
                       <button class="btn">18K</button>
                     </div>
@@ -250,7 +274,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 px-mdl-0">
                 <div class="card">
                   <div class="img">
                     <img src="./assets/images/fast-delivery.png" alt="" />
@@ -351,11 +375,23 @@
             </div>
             <div class="col-md-8">
               <div class="splide">
+                <div class="splide__arrows">
+                  <button class="splide__arrow splide__arrow--prev">
+                    <img
+                      src="./assets/images/product-slide-arrow.svg"
+                      style="transform: rotate(180deg)"
+                      alt=""
+                    />
+                  </button>
+                  <button class="splide__arrow splide__arrow--next">
+                    <img src="./assets/images/product-slide-arrow.svg" alt="" />
+                  </button>
+                </div>
                 <div class="splide__track">
                   <ul class="splide__list">
                     <li class="splide__slide">
                       <div class="product-card">
-                        <div class="product-slider">
+                        <div class="product-img">
                           <img
                             src="./assets/images/diamond-silver-ring.png"
                             alt=""
@@ -377,7 +413,7 @@
                     </li>
                     <li class="splide__slide">
                       <div class="product-card">
-                        <div class="product-slider">
+                        <div class="product-img">
                           <img
                             src="./assets/images/diamond-silver-ring.png"
                             alt=""
@@ -399,7 +435,7 @@
                     </li>
                     <li class="splide__slide">
                       <div class="product-card">
-                        <div class="product-slider">
+                        <div class="product-img">
                           <img
                             src="./assets/images/diamond-silver-ring.png"
                             alt=""
@@ -446,150 +482,416 @@
                   <div class="swiper-slide">
                     <div class="product-card">
                       <div class="product-slider">
-                        <img
-                          src="./assets/images/diamond-silver-ring.png"
-                          alt=""
-                        />
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-silver-ring.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-silver-ring.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-silver-ring.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                       </div>
                       <div class="product-details">
                         <div class="reviews">
-                          <img src="./assets/images/star-fill.png" alt="" /><img
-                            src="./assets/images/star-fill.png"
-                            alt=""
-                          /><img
-                            src="./assets/images/star-fill.png"
-                            alt=""
-                          /><img
-                            src="./assets/images/star-fill.png"
-                            alt=""
-                          /><img
-                            src="./assets/images/star-no-fill.png"
-                            alt=""
-                          />
-                          <span>(4 Customer Review)</span>
+                          <div class="stars">
+                            <img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-no-fill.png"
+                              alt=""
+                            />
+                          </div>
+                          <span class="count">(4 Customer Review)</span>
                         </div>
                         <h3>Diamond Silver Ring</h3>
-                        <h2>$9.99</h2>
+                        <h2>$189.99</h2>
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="product-card">
                       <div class="product-slider">
-                        <img
-                          src="./assets/images/diamond-silver-ring.png"
-                          alt=""
-                        />
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/necklace (2).png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/necklace (2).png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/necklace (2).png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                       </div>
                       <div class="product-details">
                         <div class="reviews">
-                          <img src="./assets/images/star-fill.png" alt="" /><img
-                            src="./assets/images/star-fill.png"
-                            alt=""
-                          /><img
-                            src="./assets/images/star-fill.png"
-                            alt=""
-                          /><img
-                            src="./assets/images/star-fill.png"
-                            alt=""
-                          /><img
-                            src="./assets/images/star-no-fill.png"
-                            alt=""
-                          />
-                          <span>(4 Customer Review)</span>
+                          <div class="stars">
+                            <img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-no-fill.png"
+                              alt=""
+                            />
+                          </div>
+                          <span class="count">(4 Customer Review)</span>
                         </div>
-                        <h3>Diamond Silver Ring</h3>
-                        <h2>$9.99</h2>
+                        <h3>Necklace</h3>
+                        <h2>$189.99</h2>
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="product-card">
                       <div class="product-slider">
-                        <img
-                          src="./assets/images/diamond-silver-ring.png"
-                          alt=""
-                        />
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-bracelet.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-bracelet.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-bracelet.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                       </div>
                       <div class="product-details">
                         <div class="reviews">
-                          <img src="./assets/images/star-fill.png" alt="" /><img
-                            src="./assets/images/star-fill.png"
-                            alt=""
-                          /><img
-                            src="./assets/images/star-fill.png"
-                            alt=""
-                          /><img
-                            src="./assets/images/star-fill.png"
-                            alt=""
-                          /><img
-                            src="./assets/images/star-no-fill.png"
-                            alt=""
-                          />
-                          <span>(4 Customer Review)</span>
+                          <div class="stars">
+                            <img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-no-fill.png"
+                              alt=""
+                            />
+                          </div>
+                          <span class="count">(4 Customer Review)</span>
                         </div>
-                        <h3>Diamond Silver Ring</h3>
-                        <h2>$9.99</h2>
+                        <h3>Bracelet</h3>
+                        <h2>$189.99</h2>
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="product-card">
                       <div class="product-slider">
-                        <img
-                          src="./assets/images/diamond-silver-ring.png"
-                          alt=""
-                        />
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-ring.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-ring.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-ring.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                       </div>
                       <div class="product-details">
                         <div class="reviews">
-                          <img src="./assets/images/star-fill.png" alt="" /><img
-                            src="./assets/images/star-fill.png"
-                            alt=""
-                          /><img
-                            src="./assets/images/star-fill.png"
-                            alt=""
-                          /><img
-                            src="./assets/images/star-fill.png"
-                            alt=""
-                          /><img
-                            src="./assets/images/star-no-fill.png"
-                            alt=""
-                          />
-                          <span>(4 Customer Review)</span>
+                          <div class="stars">
+                            <img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-no-fill.png"
+                              alt=""
+                            />
+                          </div>
+                          <span class="count">(4 Customer Review)</span>
                         </div>
-                        <h3>Diamond Silver Ring</h3>
-                        <h2>$9.99</h2>
+                        <h3>Ring</h3>
+                        <h2>$189.99</h2>
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="product-card">
                       <div class="product-slider">
-                        <img
-                          src="./assets/images/diamond-silver-ring.png"
-                          alt=""
-                        />
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-silver-ring.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-silver-ring.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-silver-ring.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                       </div>
                       <div class="product-details">
                         <div class="reviews">
-                          <img src="./assets/images/star-fill.png" alt="" /><img
-                            src="./assets/images/star-fill.png"
-                            alt=""
-                          /><img
-                            src="./assets/images/star-fill.png"
-                            alt=""
-                          /><img
-                            src="./assets/images/star-fill.png"
-                            alt=""
-                          /><img
-                            src="./assets/images/star-no-fill.png"
-                            alt=""
-                          />
-                          <span>(4 Customer Review)</span>
+                          <div class="stars">
+                            <img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-no-fill.png"
+                              alt=""
+                            />
+                          </div>
+                          <span class="count">(4 Customer Review)</span>
                         </div>
                         <h3>Diamond Silver Ring</h3>
-                        <h2>$9.99</h2>
+                        <h2>$189.99</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/necklace (2).png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/necklace (2).png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/necklace (2).png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      <div class="product-details">
+                        <div class="reviews">
+                          <div class="stars">
+                            <img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-no-fill.png"
+                              alt=""
+                            />
+                          </div>
+                          <span class="count">(4 Customer Review)</span>
+                        </div>
+                        <h3>Necklace</h3>
+                        <h2>$189.99</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-bracelet.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-bracelet.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-bracelet.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      <div class="product-details">
+                        <div class="reviews">
+                          <div class="stars">
+                            <img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-no-fill.png"
+                              alt=""
+                            />
+                          </div>
+                          <span class="count">(4 Customer Review)</span>
+                        </div>
+                        <h3>Bracelet</h3>
+                        <h2>$189.99</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-ring.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-ring.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-ring.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      <div class="product-details">
+                        <div class="reviews">
+                          <div class="stars">
+                            <img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-no-fill.png"
+                              alt=""
+                            />
+                          </div>
+                          <span class="count">(4 Customer Review)</span>
+                        </div>
+                        <h3>Ring</h3>
+                        <h2>$189.99</h2>
                       </div>
                     </div>
                   </div>
@@ -606,6 +908,7 @@
                     alt="arrow-next"
                   />
                 </div>
+                <div class="swiper-pagination"></div>
               </div>
             </div>
           </div>
@@ -732,10 +1035,48 @@
         },
       });
 
+      new Swiper(".product-slider", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+      });
+
+      var swiper3 = new Swiper(".mySwiper3", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper4 = new Swiper(".mySwiper4", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+
       var splide = new Splide(".splide", {
         perPage: 3,
         rewind: true,
         padding: "3.5rem",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
       });
 
       splide.mount();
