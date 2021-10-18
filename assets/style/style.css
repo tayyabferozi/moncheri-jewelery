@@ -226,6 +226,12 @@ a:hover {
   font-weight: 900;
 }
 
+@media screen and (min-width: 768px) {
+  .w-md-100 {
+    width: 100% !important;
+  }
+}
+
 .color1 {
   color: #49331e;
 }
@@ -1041,6 +1047,7 @@ a:hover {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
 }
 
 .products_container .filters-container {
