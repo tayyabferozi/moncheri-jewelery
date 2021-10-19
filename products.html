@@ -12,11 +12,20 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/style/utilities.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/style/style.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <style>
+      .page_container {
+        max-width: 1250px;
+      }
+    </style>
     <!-- ===========================  EXTERNAL END  =============================== -->
     <title>Products</title>
   </head>
@@ -151,19 +160,22 @@
                   <span class="multi-range">
                     <input
                       type="range"
-                      min="0"
-                      max="1000"
-                      value="5"
+                      min="490.00"
+                      max="879.00"
+                      value="490.00"
                       id="lower"
+                      step="0.01"
                     />
                     <input
                       type="range"
-                      min="0"
-                      max="1000"
-                      value="100"
+                      min="490.00"
+                      max="879.00"
+                      value="879.00"
                       id="upper"
+                      step="0.01"
                     />
                   </span>
+                  <button class="btn">Filter</button>
                 </li>
               </ul>
 
@@ -177,7 +189,11 @@
                 <img src="./assets/images/dropdown-up.png" alt="dropdown-img" />
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <select name="lorem" id="lorem" class="form-select">
+                    <option value="Lorem">Lorem</option>
+                  </select>
+                </li>
               </ul>
 
               <button
@@ -190,7 +206,11 @@
                 <img src="./assets/images/dropdown-up.png" alt="dropdown-img" />
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <select name="lorem" id="lorem" class="form-select">
+                    <option value="Lorem">Lorem</option>
+                  </select>
+                </li>
               </ul>
 
               <button
@@ -203,7 +223,11 @@
                 <img src="./assets/images/dropdown-up.png" alt="dropdown-img" />
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
-                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <select name="lorem" id="lorem" class="form-select">
+                    <option value="Lorem">Lorem</option>
+                  </select>
+                </li>
               </ul>
             </div>
 
@@ -214,6 +238,13 @@
               </h2>
             </div>
           </div>
+          <ul class="pagination">
+            <li><span>1</span></li>
+            <li><span>2</span></li>
+            <li><span>3</span></li>
+            <li><span>4</span></li>
+            <li><span>5</span></li>
+          </ul>
         </div>
       </div>
     </section>
@@ -310,11 +341,13 @@
     <!-- ===========================  FOOTER END  =============================== -->
 
     <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/products.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/textFit.js"></script>
+    <script src="./assets/js/products.js"></script>
   </body>
 </html>

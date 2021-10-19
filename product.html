@@ -120,31 +120,37 @@
     </section>
     <!-- ===========================  HEADER END  =============================== -->
 
-    <section class="page_container">
-      <div class="container-fluid mx-auto breadcrumb-container">
-        <div class="row">
-          <div class="col-12">
-            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item">Home</li>
-                <li class="breadcrumb-item" aria-current="page">Engagement</li>
-                <li class="breadcrumb-item" aria-current="page">
-                  Diamond Silver Ring
-                </li>
-              </ol>
-              <div class="social">
-                <a href="#"
-                  ><img src="./assets/images/facebook.svg" alt=""
-                /></a>
-                <a href="#"><img src="./assets/images/twitter.svg" alt="" /></a>
-                <a href="#"
-                  ><img src="./assets/images/instagram.svg" alt=""
-                /></a>
-                <a href="#"
-                  ><img src="./assets/images/linkedin.svg" alt=""
-                /></a>
-              </div>
-            </nav>
+    <section class="">
+      <div class="page_container">
+        <div class="container-fluid mx-auto breadcrumb-container">
+          <div class="row">
+            <div class="col-12">
+              <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">Home</li>
+                  <li class="breadcrumb-item" aria-current="page">
+                    Engagement
+                  </li>
+                  <li class="breadcrumb-item" aria-current="page">
+                    Diamond Silver Ring
+                  </li>
+                </ol>
+                <div class="social">
+                  <a href="#"
+                    ><img src="./assets/images/facebook.svg" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="./assets/images/twitter.svg" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="./assets/images/instagram.svg" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="./assets/images/linkedin.svg" alt=""
+                  /></a>
+                </div>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
@@ -190,48 +196,26 @@
                       <div class="swiper-slide">
                         <img src="./assets/images/product-slide-1.png" />
                       </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/images/product-slide-1.png" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/images/product-slide-1.png" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/images/product-slide-1.png" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/images/product-slide-1.png" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/images/product-slide-1.png" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/images/product-slide-1.png" />
-                      </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+
+                    <div class="swiper-button-next">
+                      <img
+                        src="./assets/images/product-slide-arrow.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="swiper-button-prev"
+                      style="transform: rotate(180deg)"
+                    >
+                      <img
+                        src="./assets/images/product-slide-arrow.svg"
+                        alt=""
+                      />
+                    </div>
                   </div>
                   <div thumbsSlider="" class="swiper mySwiper3">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="./assets/images/product-slide-1.png" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/images/product-slide-1.png" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/images/product-slide-1.png" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/images/product-slide-1.png" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/images/product-slide-1.png" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/images/product-slide-1.png" />
-                      </div>
                       <div class="swiper-slide">
                         <img src="./assets/images/product-slide-1.png" />
                       </div>
@@ -260,9 +244,9 @@
                     </h3>
                     <h3>
                       $189.99
-                      <span class="badge py-1"
-                        ><img src="./assets/images/van.png" alt="" /> Free
-                        Shipping, Free Return
+                      <span class="badge py-1">
+                        <img src="./assets/images/van.png" class="van" alt="" />
+                        Free Shipping, Free Return
                       </span>
                     </h3>
                     <div class="reviews">
@@ -271,7 +255,7 @@
                       <img src="./assets/images/star-fill.png" alt="" />
                       <img src="./assets/images/star-fill.png" alt="" />
                       <img src="./assets/images/star-no-fill.png" alt="" />
-                      <h5>(4 Customer Review)</h5>
+                      <h5 class="fit">(4 Customer Review)</h5>
                     </div>
                   </div>
                   <div class="info">
@@ -320,9 +304,30 @@
           <div class="row">
             <div class="col-12 mx-auto">
               <div class="tabs-btns">
-                <h3 class="active">Specification</h3>
-                <h3>Customer Reviews</h3>
-                <h3>Return Policy</h3>
+                <div class="tab active">
+                  <h3 data-toggle="specification">Specification</h3>
+                  <div class="tab-item" id="specification">
+                    <p>Metal</p>
+                    <p>Width</p>
+                    <p>Prong Metal</p>
+                  </div>
+                </div>
+                <div class="tab">
+                  <h3 data-toggle="reviews">Customer Reviews</h3>
+                  <div class="tab-item" id="reviews">
+                    <p>Metal 2</p>
+                    <p>Width 2</p>
+                    <p>Prong Metal 2</p>
+                  </div>
+                </div>
+                <div class="tab">
+                  <h3 data-toggle="policy">Return Policy</h3>
+                  <div class="tab-item" id="policy">
+                    <p>Metal 3</p>
+                    <p>Width 3</p>
+                    <p>Prong Metal 3</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -339,7 +344,7 @@
         <div class="container-fluid">
           <div class="cards">
             <div class="row">
-              <div class="col-md-4">
+              <div class="my-3 col-6 col-md-4">
                 <div class="card">
                   <div class="img">
                     <img src="./assets/images/made-in-usa.png" alt="" />
@@ -350,7 +355,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 px-mdl-0">
+              <div class="my-3 col-6 col-md-4 px-mdl-0">
                 <div class="card">
                   <div class="img">
                     <img src="./assets/images/fast-delivery.png" alt="" />
@@ -361,7 +366,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-3 d-block d-md-none"></div>
+              <div class="my-3 col-6 col-md-4">
                 <div class="card">
                   <div class="img">
                     <img src="./assets/images/fast-delivery-2.png" alt="" />
@@ -600,7 +606,7 @@
                               alt=""
                             />
                           </div>
-                          <span class="count">(4 Customer Review)</span>
+                          <span class="count fit">(4 Customer Review)</span>
                         </div>
                         <h3>Diamond Silver Ring</h3>
                         <h2>$189.99</h2>
@@ -652,7 +658,7 @@
                               alt=""
                             />
                           </div>
-                          <span class="count">(4 Customer Review)</span>
+                          <span class="count fit">(4 Customer Review)</span>
                         </div>
                         <h3>Necklace</h3>
                         <h2>$189.99</h2>
@@ -704,7 +710,7 @@
                               alt=""
                             />
                           </div>
-                          <span class="count">(4 Customer Review)</span>
+                          <span class="count fit">(4 Customer Review)</span>
                         </div>
                         <h3>Bracelet</h3>
                         <h2>$189.99</h2>
@@ -756,7 +762,7 @@
                               alt=""
                             />
                           </div>
-                          <span class="count">(4 Customer Review)</span>
+                          <span class="count fit">(4 Customer Review)</span>
                         </div>
                         <h3>Ring</h3>
                         <h2>$189.99</h2>
@@ -808,7 +814,7 @@
                               alt=""
                             />
                           </div>
-                          <span class="count">(4 Customer Review)</span>
+                          <span class="count fit">(4 Customer Review)</span>
                         </div>
                         <h3>Diamond Silver Ring</h3>
                         <h2>$189.99</h2>
@@ -860,7 +866,7 @@
                               alt=""
                             />
                           </div>
-                          <span class="count">(4 Customer Review)</span>
+                          <span class="count fit">(4 Customer Review)</span>
                         </div>
                         <h3>Necklace</h3>
                         <h2>$189.99</h2>
@@ -912,7 +918,7 @@
                               alt=""
                             />
                           </div>
-                          <span class="count">(4 Customer Review)</span>
+                          <span class="count fit">(4 Customer Review)</span>
                         </div>
                         <h3>Bracelet</h3>
                         <h2>$189.99</h2>
@@ -964,7 +970,7 @@
                               alt=""
                             />
                           </div>
-                          <span class="count">(4 Customer Review)</span>
+                          <span class="count fit">(4 Customer Review)</span>
                         </div>
                         <h3>Ring</h3>
                         <h2>$189.99</h2>
@@ -974,13 +980,13 @@
                 </div>
                 <div class="swiper-button-next">
                   <img
-                    src="./assets/images/product-slide-arrow.svg"
+                    src="./assets/images/product-slider-arrow-with-bg.svg"
                     alt="arrow-next"
                   />
                 </div>
                 <div class="swiper-button-prev">
                   <img
-                    src="./assets/images/product-slide-arrow.svg"
+                    src="./assets/images/product-slider-arrow-with-bg.svg"
                     alt="arrow-next"
                   />
                 </div>
@@ -1093,7 +1099,10 @@
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/product.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/textFit.js"></script>
     <script>
+      textFit(document.querySelectorAll(".fit"));
+
       var swiper = new Swiper(".mySwiper2", {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -1102,11 +1111,17 @@
           prevEl: ".swiper-button-prev",
         },
         breakpoints: {
-          576: {
+          992: {
             slidesPerView: 4,
           },
-          400: {
+          576: {
+            slidesPerView: 3,
+          },
+          451: {
             slidesPerView: 2,
+          },
+          0: {
+            slidesPerView: 1,
           },
         },
       });
@@ -1122,10 +1137,6 @@
           el: ".swiper-pagination",
           clickable: true,
         },
-        // navigation: {
-        //   nextEl: ".swiper-button-next",
-        //   prevEl: ".swiper-button-prev",
-        // },
       });
 
       var swiper3 = new Swiper(".mySwiper3", {
@@ -1141,7 +1152,7 @@
           prevEl: ".swiper-button-prev",
         },
         thumbs: {
-          swiper: swiper,
+          swiper: swiper3,
         },
       });
 
@@ -1153,9 +1164,24 @@
           el: ".swiper-pagination",
           clickable: true,
         },
+        breakpoints: {
+          575: {
+            perPage: 2,
+            padding: "-1rem",
+            trimSpace: true,
+          },
+          450: {
+            perPage: 1,
+          },
+        },
       });
 
       splide.mount();
+
+      $(".tab").click(function () {
+        $(".tab").removeClass("active");
+        $(this).addClass("active");
+      });
     </script>
   </body>
 </html>
