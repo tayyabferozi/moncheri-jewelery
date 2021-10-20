@@ -1042,6 +1042,9 @@ function updatePagination() {
     }
   }
   paginationMarkup += `<li data-page-num=${"next"}><span><img src='./assets/images/pagination-arrow.svg' style='transform: rotate(180deg)' /></span></li>`;
+  if (paginationItemsLen <= 1) {
+    paginationMarkup = "";
+  }
   $(".pagination").html(paginationMarkup);
   items.parent().hide();
   items.each(function (i, el) {
@@ -1071,8 +1074,6 @@ function updatePagination() {
     } else {
       paginationNum = +$this.find("span").html() - 1;
     }
-    console.log(paginationNum);
-
     $(".pagination li").removeClass("active");
     $(`.pagination li[data-page-num='${paginationNum + 1}']`).addClass(
       "active"
@@ -1091,6 +1092,8 @@ function updatePagination() {
   });
 }
 
+$(".ranger .btn").click(filterByPrice);
+
 function sliderHandler() {
   const minPriceWrapper = $("#min-price-filter");
   const maxPriceWrapper = $("#max-price-filter");
@@ -1098,24 +1101,17 @@ function sliderHandler() {
   minPriceWrapper.html(filters.price.lowerPriceVal);
   maxPriceWrapper.html(filters.price.upperPriceVal);
 
-  upperSlider.oninput = function () {
+  function changeValues() {
     filters.price.lowerPriceVal = parseFloat(lowerSlider.value).toFixed(2);
     filters.price.upperPriceVal = parseFloat(upperSlider.value).toFixed(2);
 
     minPriceWrapper.html(filters.price.lowerPriceVal);
     maxPriceWrapper.html(filters.price.upperPriceVal);
+  }
 
-    filterByPrice();
-  };
+  upperSlider.oninput = changeValues;
 
-  lowerSlider.oninput = function () {
-    filters.price.lowerPriceVal = parseFloat(lowerSlider.value).toFixed(2);
-    filters.price.upperPriceVal = parseFloat(upperSlider.value).toFixed(2);
-
-    minPriceWrapper.html(filters.price.lowerPriceVal);
-    maxPriceWrapper.html(filters.price.upperPriceVal);
-    filterByPrice();
-  };
+  lowerSlider.oninput = changeValues;
 }
 
 function showProductsOnDOM(prods) {

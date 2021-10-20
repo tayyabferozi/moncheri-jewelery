@@ -69,3 +69,38 @@ input[type="range"]::-webkit-slider-thumb::before {
 .multi-range input[type="range"]:nth-child(2)::-webkit-slider-thumb::before {
   background-color: grey;
 }
+.coolBeans {
+  font-weight: 100;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+.coolBeans:hover {
+  color: #fff !important;
+}
+.coolBeans::after {
+  background-color: #49341c;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+.coolBeans:hover::after {
+  transform: translate(0, 0);
+}
+.coolBeans:hover {
+  border-color: transparent;
+  transform: scale(1.05);
+  will-change: transform;
+}

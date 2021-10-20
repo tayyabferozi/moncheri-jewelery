@@ -17,6 +17,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="stylesheet" href="./assets/style/utilities.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -132,7 +133,7 @@
                 There are many variations of passages of Lorem Ipsum available,
                 but the
               </p>
-              <button>SHOP NOW</button>
+              <button class="coolBeans">SHOP NOW</button>
             </div>
           </div>
         </div>
@@ -184,7 +185,7 @@
                 middle of text.All the Lorem Ipsum generators on the Internet.
               </p>
               <div class="d-flex justify-content-center">
-                <button class="outlined-btn">SHOP NOW</button>
+                <button class="outlined-btn coolBeans">SHOP NOW</button>
               </div>
             </div>
           </div>
@@ -205,56 +206,438 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-11 col-md-12 mx-auto">
-              <div class="swiper mySwiper">
+              <div class="swiper mySwiper2 custom-btns">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img src="./assets/images/diamond-silver-ring.png" alt="" />
-                    <div class="text-center">
-                      <h4 class="color3">Diamond Silver Ring</h4>
-                      <p class="f16 color1 fw400">
-                        Lorem Ipsum is simply dummy text Page Maker including
-                      </p>
+                    <div class="product-card">
+                      <div class="product-slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-silver-ring.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-silver-ring.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-silver-ring.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      <div class="product-details">
+                        <div class="reviews">
+                          <div class="stars">
+                            <img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-no-fill.png"
+                              alt=""
+                            />
+                          </div>
+                          <span class="count fit">(4 Customer Review)</span>
+                        </div>
+                        <h3>Diamond Silver Ring</h3>
+                        <h2>$189.99</h2>
+                      </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <img src="./assets/images/diamond-ring.png" alt="" />
-                    <div class="text-center">
-                      <h4 class="color3">Diamond Ring</h4>
-                      <p class="f16 color1 fw400">
-                        Lorem Ipsum is simply dummy text Page Maker including
-                      </p>
+                    <div class="product-card">
+                      <div class="product-slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/necklace (2).png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/necklace (2).png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/necklace (2).png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      <div class="product-details">
+                        <div class="reviews">
+                          <div class="stars">
+                            <img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-no-fill.png"
+                              alt=""
+                            />
+                          </div>
+                          <span class="count fit">(4 Customer Review)</span>
+                        </div>
+                        <h3>Necklace</h3>
+                        <h2>$189.99</h2>
+                      </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <img src="./assets/images/diamond-bracelet.png" alt="" />
-                    <div class="text-center">
-                      <h4 class="color3">Diamond Bracelet</h4>
-                      <p class="f16 color1 fw400">
-                        Lorem Ipsum is simply dummy text Page Maker including
-                      </p>
+                    <div class="product-card">
+                      <div class="product-slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-bracelet.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-bracelet.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-bracelet.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      <div class="product-details">
+                        <div class="reviews">
+                          <div class="stars">
+                            <img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-no-fill.png"
+                              alt=""
+                            />
+                          </div>
+                          <span class="count fit">(4 Customer Review)</span>
+                        </div>
+                        <h3>Bracelet</h3>
+                        <h2>$189.99</h2>
+                      </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <img src="./assets/images/ring.svg" alt="" />
-                    <div class="text-center">
-                      <h4 class="color3 mb-1">Diamond Silver Ring</h4>
-                      <p class="f16 color1 fw400">
-                        Lorem Ipsum is simply dummy text Page Maker including
-                      </p>
+                    <div class="product-card">
+                      <div class="product-slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-ring.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-ring.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-ring.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      <div class="product-details">
+                        <div class="reviews">
+                          <div class="stars">
+                            <img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-no-fill.png"
+                              alt=""
+                            />
+                          </div>
+                          <span class="count fit">(4 Customer Review)</span>
+                        </div>
+                        <h3>Ring</h3>
+                        <h2>$189.99</h2>
+                      </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <img src="./assets/images/ring.svg" alt="" />
-                    <div class="text-center">
-                      <h4 class="color3 mb-1">Diamond Silver Ring</h4>
-                      <p class="f16 color1 fw400">
-                        Lorem Ipsum is simply dummy text Page Maker including
-                      </p>
+                    <div class="product-card">
+                      <div class="product-slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-silver-ring.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-silver-ring.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-silver-ring.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      <div class="product-details">
+                        <div class="reviews">
+                          <div class="stars">
+                            <img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-no-fill.png"
+                              alt=""
+                            />
+                          </div>
+                          <span class="count fit">(4 Customer Review)</span>
+                        </div>
+                        <h3>Diamond Silver Ring</h3>
+                        <h2>$189.99</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/necklace (2).png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/necklace (2).png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/necklace (2).png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      <div class="product-details">
+                        <div class="reviews">
+                          <div class="stars">
+                            <img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-no-fill.png"
+                              alt=""
+                            />
+                          </div>
+                          <span class="count fit">(4 Customer Review)</span>
+                        </div>
+                        <h3>Necklace</h3>
+                        <h2>$189.99</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-bracelet.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-bracelet.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-bracelet.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      <div class="product-details">
+                        <div class="reviews">
+                          <div class="stars">
+                            <img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-no-fill.png"
+                              alt=""
+                            />
+                          </div>
+                          <span class="count fit">(4 Customer Review)</span>
+                        </div>
+                        <h3>Bracelet</h3>
+                        <h2>$189.99</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-ring.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-ring.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              src="./assets/images/diamond-ring.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      <div class="product-details">
+                        <div class="reviews">
+                          <div class="stars">
+                            <img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-fill.png"
+                              alt=""
+                            /><img
+                              src="./assets/images/star-no-fill.png"
+                              alt=""
+                            />
+                          </div>
+                          <span class="count fit">(4 Customer Review)</span>
+                        </div>
+                        <h3>Ring</h3>
+                        <h2>$189.99</h2>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next">
+                  <img
+                    src="./assets/images/product-slider-arrow-with-bg.svg"
+                    alt="arrow-next"
+                  />
+                </div>
+                <div class="swiper-button-prev">
+                  <img
+                    src="./assets/images/product-slider-arrow-with-bg.svg"
+                    alt="arrow-next"
+                  />
+                </div>
+                <div class="swiper-pagination"></div>
               </div>
             </div>
           </div>
@@ -282,7 +665,7 @@
                       Lorem Ipsum is simply dummy text PageMaker including
                       versions of Lorem Ipsum.
                     </p>
-                    <a href="#" class="outlined-btn">Continue</a>
+                    <a href="#" class="outlined-btn coolBeans">Continue</a>
                   </div>
                 </div>
               </div>
@@ -303,7 +686,7 @@
           Lorem Ipsum is simply dummy text PageMaker including versions of Lorem
           Ipsum.
         </p>
-        <button>Shop Now</button>
+        <button class="coolBeans">Shop Now</button>
       </div>
     </section>
     <!-- ===========================  GEMSTONE END  =============================== -->
@@ -362,7 +745,7 @@
                 </div>
               </div>
               <div class="d-flex justify-content-center mt-3 mt-md-5">
-                <button class="outlined-btn">See More</button>
+                <button class="outlined-btn coolBeans">See More</button>
               </div>
             </div>
           </div>
@@ -480,7 +863,9 @@
 
     <!-- ===========================  EXTERNAL START  =============================== -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/textFit.js"></script>
     <script>
+      textFit(document.querySelectorAll(".fit"));
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -490,11 +875,47 @@
         },
         breakpoints: {
           576: {
-            slidesPerView: 3,
+            slidesPerView: 4,
           },
           400: {
             slidesPerView: 2,
           },
+        },
+      });
+
+      var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          992: {
+            slidesPerView: 4,
+          },
+          576: {
+            slidesPerView: 3,
+          },
+          451: {
+            slidesPerView: 2,
+          },
+          0: {
+            slidesPerView: 1,
+          },
+        },
+      });
+
+      new Swiper(".product-slider", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
         },
       });
     </script>
