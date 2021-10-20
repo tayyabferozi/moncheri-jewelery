@@ -593,9 +593,6 @@ section {
     background: url("../images/bg-hero-plain.png");
   }
 
-  // @media screen and (max-width: 1400px) {
-  // }
-
   .text_content {
     top: 30%;
     left: 0%;
@@ -607,9 +604,9 @@ section {
     h1 {
       font-size: 3.78vw;
 
-      // @media screen and (max-width: 1400px) {
-      //   font-size: 3.5vw;
-      // }
+      @media screen and (min-width: 1251px) {
+        font-size: 47.25px;
+      }
 
       @media screen and (max-width: 767px) {
         font-size: 5.5vw;
@@ -621,9 +618,9 @@ section {
       margin-bottom: 2rem;
       font-size: 1.535vw;
 
-      // @media screen and (max-width: 1400px) {
-      //   font-size: 1.6vw;
-      // }
+      @media screen and (min-width: 1251px) {
+        font-size: 19.1875px;
+      }
 
       @media screen and (max-width: 767px) {
         font-size: 2.6vw;
@@ -639,13 +636,10 @@ section {
       width: 16.5vw;
       font-size: 2.1vw;
 
-      // @media screen and (max-width: 1400px) {
-      //   width: 11vw;
-      //   font-size: 1.145vw;
-      //   padding-left: 0;
-      //   padding-right: 0;
-      //   text-align: center;
-      // }
+      @media screen and (min-width: 1251px) {
+        font-size: 26.25px;
+        width: 206px;
+      }
 
       @media screen and (max-width: 767px) {
         width: 15vw;
@@ -680,6 +674,10 @@ section {
   h1 {
     font-size: 3.5vw;
 
+    @media screen and (min-width: 1251px) {
+      font-size: 43.75px;
+    }
+
     @media screen and (max-width: 576px) {
       font-size: 6vw;
     }
@@ -687,6 +685,10 @@ section {
 
   p {
     font-size: 1.6vw;
+
+    @media screen and (min-width: 1251px) {
+      font-size: 20px;
+    }
 
     @media screen and (max-width: 576px) {
       font-size: 2.12vw;
@@ -698,6 +700,11 @@ section {
     padding-left: 0;
     padding-right: 0;
     font-size: 2.3vw;
+
+    @media screen and (min-width: 1251px) {
+      width: 225px;
+      font-size: 28.75px;
+    }
   }
 }
 
@@ -861,6 +868,10 @@ section {
       margin-bottom: 0;
       max-width: 55vw;
 
+      @media screen and (min-width: 1251px) {
+        font-size: 43.75px;
+      }
+
       @media screen and (max-width: 1400px) {
         font-size: 3.5vw;
       }
@@ -876,6 +887,10 @@ section {
       margin-right: 15.32px;
       font-family: "OptimaLight";
       width: 96.98%;
+
+      @media screen and (min-width: 1251px) {
+        font-size: 18.375px;
+      }
 
       @media screen and (max-width: 767px) {
         font-size: 2vw;
@@ -904,6 +919,11 @@ section {
       font-size: 2.25vw;
       text-align: center;
 
+      @media screen and (min-width: 1251px) {
+        font-size: 28.125px;
+        width: 190px;
+      }
+
       @media screen and (max-width: 767px) {
         width: 21.25vw;
         font-size: 2.75vw;
@@ -927,6 +947,10 @@ section {
   background-repeat: no-repeat;
   background-size: contain;
 
+  @media screen and (min-width: 1251px) {
+    padding: 160px 0;
+  }
+
   @media screen and (max-width: 767px) {
     padding: 7rem 0rem;
   }
@@ -937,6 +961,10 @@ section {
 
   h1 {
     font-size: 3.98vw;
+
+    @media screen and (min-width: 1251px) {
+      font-size: 41.75px;
+    }
 
     @media screen and (max-width: 767px) {
       font-size: 6vw;
@@ -950,6 +978,11 @@ section {
     max-width: 40vw;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 1251px) {
+      font-size: 17.25px;
+      max-width: 500px;
+    }
 
     @media screen and (max-width: 767px) {
       font-size: 2vw;
@@ -967,6 +1000,11 @@ section {
     padding-left: 0;
     padding-right: 0;
 
+    @media screen and (min-width: 1251px) {
+      font-size: 17.5px;
+      width: 155px;
+    }
+
     @media screen and (max-width: 795px) {
       width: 17.5vw;
       font-size: 2.125vw;
@@ -983,6 +1021,10 @@ section {
     font-size: 3.3vw;
     margin-bottom: 0;
 
+    @media screen and (min-width: 1251px) {
+      font-size: 41.25px;
+    }
+
     @media screen and (max-width: 767px) {
       font-size: 5vw;
     }
@@ -991,8 +1033,8 @@ section {
   h3 {
     font-size: 2.25vw;
 
-    @media screen and (max-width: 1400px) {
-      font-size: 2vw;
+    @media screen and (min-width: 1251px) {
+      font-size: 25px;
     }
 
     @media screen and (max-width: 767px) {
@@ -1011,6 +1053,11 @@ section {
     margin-right: auto;
     width: 22vw;
 
+    @media screen and (min-width: 1251px) {
+      font-size: 18.75px;
+      width: 275px;
+    }
+
     @media screen and (max-width: 767px) {
       font-size: 2vw;
       width: 28vw;
@@ -1024,6 +1071,10 @@ section {
 
   p.sub-heading.main {
     width: unset;
+
+    @media screen and (min-width: 1251px) {
+      font-size: 18.75px;
+    }
 
     @media screen and (max-width: 767px) {
       font-size: 2.125vw;
@@ -1051,6 +1102,11 @@ section {
     text-align: center;
     padding-left: 0;
     padding-right: 0;
+
+    @media screen and (min-width: 1251px) {
+      font-size: 31.25px;
+      width: 237px;
+    }
 
     @media screen and (max-width: 767px) {
       font-size: 3vw;
@@ -1088,6 +1144,10 @@ section {
     max-width: 44.5vw;
     margin-left: auto;
 
+    @media screen and (min-width: 1251px) {
+      max-width: 556px;
+    }
+
     @media screen and (max-width: 767px) {
       max-width: 70vw;
       margin-right: auto;
@@ -1101,6 +1161,10 @@ section {
     h1 {
       font-size: 3.252vw;
 
+      @media screen and (min-width: 1251px) {
+        font-size: 40px;
+      }
+
       @media screen and (max-width: 767px) {
         font-size: 5vw;
       }
@@ -1108,6 +1172,11 @@ section {
     p {
       max-width: 43vw;
       font-size: 1.39vw;
+
+      @media screen and (min-width: 1251px) {
+        font-size: 17.375px;
+        max-width: 537px;
+      }
 
       @media screen and (max-width: 767px) {
         max-width: 67vw;
@@ -1119,6 +1188,10 @@ section {
     height: 4vw;
     display: flex;
     align-items: center;
+
+    @media screen and (min-width: 1251px) {
+      height: 50px;
+    }
 
     @media screen and (max-width: 767px) {
       height: 6vw;
@@ -1133,6 +1206,10 @@ section {
       height: 100%;
       margin-right: 4px;
 
+      @media screen and (min-width: 1251px) {
+        width: 268.75px;
+      }
+
       @media screen and (max-width: 767px) {
         width: 32.5vw;
       }
@@ -1142,6 +1219,7 @@ section {
         opacity: 1;
       }
     }
+
     button {
       height: 100%;
       background-color: $color3;
@@ -1150,6 +1228,11 @@ section {
       border-radius: 3px;
       width: 8vw;
       font-size: 1.25vw;
+
+      @media screen and (min-width: 1251px) {
+        width: 100px;
+        font-size: 15.625px;
+      }
 
       @media screen and (max-width: 767px) {
         width: 12vw;

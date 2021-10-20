@@ -666,6 +666,12 @@ a:hover {
   font-size: 3.78vw;
 }
 
+@media screen and (min-width: 1251px) {
+  .hero_container .text_content h1 {
+    font-size: 47.25px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .hero_container .text_content h1 {
     font-size: 5.5vw;
@@ -676,6 +682,12 @@ a:hover {
 .hero_container .text_content p {
   margin-bottom: 2rem;
   font-size: 1.535vw;
+}
+
+@media screen and (min-width: 1251px) {
+  .hero_container .text_content p {
+    font-size: 19.1875px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -692,6 +704,13 @@ a:hover {
   color: #fff;
   width: 16.5vw;
   font-size: 2.1vw;
+}
+
+@media screen and (min-width: 1251px) {
+  .hero_container .text_content button {
+    font-size: 26.25px;
+    width: 206px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -724,6 +743,12 @@ a:hover {
   font-size: 3.5vw;
 }
 
+@media screen and (min-width: 1251px) {
+  .about_container h1 {
+    font-size: 43.75px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .about_container h1 {
     font-size: 6vw;
@@ -732,6 +757,12 @@ a:hover {
 
 .about_container p {
   font-size: 1.6vw;
+}
+
+@media screen and (min-width: 1251px) {
+  .about_container p {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -745,6 +776,13 @@ a:hover {
   padding-left: 0;
   padding-right: 0;
   font-size: 2.3vw;
+}
+
+@media screen and (min-width: 1251px) {
+  .about_container .outlined-btn {
+    width: 225px;
+    font-size: 28.75px;
+  }
 }
 
 .arrival_cont {
@@ -949,6 +987,12 @@ a:hover {
   max-width: 55vw;
 }
 
+@media screen and (min-width: 1251px) {
+  .need_help .text h1 {
+    font-size: 43.75px;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .need_help .text h1 {
     font-size: 3.5vw;
@@ -967,6 +1011,12 @@ a:hover {
   margin-right: 15.32px;
   font-family: "OptimaLight";
   width: 96.98%;
+}
+
+@media screen and (min-width: 1251px) {
+  .need_help .text p {
+    font-size: 18.375px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1001,6 +1051,13 @@ a:hover {
   text-align: center;
 }
 
+@media screen and (min-width: 1251px) {
+  .need_help .text .outlined-btn {
+    font-size: 28.125px;
+    width: 190px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .need_help .text .outlined-btn {
     width: 21.25vw;
@@ -1021,6 +1078,12 @@ a:hover {
   background-size: contain;
 }
 
+@media screen and (min-width: 1251px) {
+  .gemstone_container {
+    padding: 160px 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .gemstone_container {
     padding: 7rem 0rem;
@@ -1033,6 +1096,12 @@ a:hover {
 
 .gemstone_container h1 {
   font-size: 3.98vw;
+}
+
+@media screen and (min-width: 1251px) {
+  .gemstone_container h1 {
+    font-size: 41.75px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1048,6 +1117,13 @@ a:hover {
   max-width: 40vw;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 1251px) {
+  .gemstone_container p {
+    font-size: 17.25px;
+    max-width: 500px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1068,6 +1144,13 @@ a:hover {
   padding-right: 0;
 }
 
+@media screen and (min-width: 1251px) {
+  .gemstone_container button {
+    font-size: 17.5px;
+    width: 155px;
+  }
+}
+
 @media screen and (max-width: 795px) {
   .gemstone_container button {
     width: 17.5vw;
@@ -1084,6 +1167,12 @@ a:hover {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 1251px) {
+  .explore_container h1 {
+    font-size: 41.25px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .explore_container h1 {
     font-size: 5vw;
@@ -1094,9 +1183,9 @@ a:hover {
   font-size: 2.25vw;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 1251px) {
   .explore_container h3 {
-    font-size: 2vw;
+    font-size: 25px;
   }
 }
 
@@ -1120,6 +1209,13 @@ a:hover {
   width: 22vw;
 }
 
+@media screen and (min-width: 1251px) {
+  .explore_container p.sub-heading {
+    font-size: 18.75px;
+    width: 275px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .explore_container p.sub-heading {
     font-size: 2vw;
@@ -1136,6 +1232,12 @@ a:hover {
 
 .explore_container p.sub-heading.main {
   width: unset;
+}
+
+@media screen and (min-width: 1251px) {
+  .explore_container p.sub-heading.main {
+    font-size: 18.75px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1169,6 +1271,13 @@ a:hover {
   text-align: center;
   padding-left: 0;
   padding-right: 0;
+}
+
+@media screen and (min-width: 1251px) {
+  .explore_container .outlined-btn {
+    font-size: 31.25px;
+    width: 237px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1210,6 +1319,12 @@ a:hover {
   margin-left: auto;
 }
 
+@media screen and (min-width: 1251px) {
+  .newsletter_container .news_inner {
+    max-width: 556px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .newsletter_container .news_inner {
     max-width: 70vw;
@@ -1226,6 +1341,12 @@ a:hover {
   font-size: 3.252vw;
 }
 
+@media screen and (min-width: 1251px) {
+  .newsletter_container .news_inner h1 {
+    font-size: 40px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .newsletter_container .news_inner h1 {
     font-size: 5vw;
@@ -1235,6 +1356,13 @@ a:hover {
 .newsletter_container .news_inner p {
   max-width: 43vw;
   font-size: 1.39vw;
+}
+
+@media screen and (min-width: 1251px) {
+  .newsletter_container .news_inner p {
+    font-size: 17.375px;
+    max-width: 537px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1254,6 +1382,12 @@ a:hover {
           align-items: center;
 }
 
+@media screen and (min-width: 1251px) {
+  .newsletter_container .inp_container {
+    height: 50px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .newsletter_container .inp_container {
     height: 6vw;
@@ -1268,6 +1402,12 @@ a:hover {
   border-radius: 3px;
   height: 100%;
   margin-right: 4px;
+}
+
+@media screen and (min-width: 1251px) {
+  .newsletter_container .inp_container input {
+    width: 268.75px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1304,6 +1444,13 @@ a:hover {
   border-radius: 3px;
   width: 8vw;
   font-size: 1.25vw;
+}
+
+@media screen and (min-width: 1251px) {
+  .newsletter_container .inp_container button {
+    width: 100px;
+    font-size: 15.625px;
+  }
 }
 
 @media screen and (max-width: 767px) {
