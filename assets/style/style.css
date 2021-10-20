@@ -153,6 +153,8 @@ a:hover {
           justify-content: center;
   margin: 0.5rem;
   cursor: pointer;
+  -webkit-transform: 0.4s ease;
+          transform: 0.4s ease;
 }
 
 .pagination li img {
@@ -1284,7 +1286,7 @@ a:hover {
 
 .newsletter_container {
   margin-top: 4rem;
-  background: url(../images/newsletter.svg);
+  background: url(../images/bg-newsletter.png);
   padding-top: 10rem;
   padding-bottom: 10rem;
   background-repeat: no-repeat;
@@ -1298,6 +1300,7 @@ a:hover {
   .newsletter_container {
     background-size: cover;
     padding: 3rem 0rem;
+    background: url(../images/bg-newsletter-shaded.png);
   }
 }
 
@@ -3286,6 +3289,14 @@ a:hover {
 
 .suggestions_container span {
   font: 0.5rem;
+}
+
+.mySwiper2 .swiper-button-next {
+  right: 23px;
+}
+
+.mySwiper2 .swiper-button-prev {
+  left: 30px;
 }
 
 .mySwiper2.product-slider {

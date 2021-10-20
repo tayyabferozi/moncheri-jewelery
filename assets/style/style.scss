@@ -140,6 +140,7 @@ section {
     justify-content: center;
     margin: 0.5rem;
     cursor: pointer;
+    transform: 0.4s ease;
 
     img {
       width: 11px;
@@ -1195,7 +1196,7 @@ section {
 // <!--============================================ NEWSLETTER START================================================ -->
 .newsletter_container {
   margin-top: 4rem;
-  background: url(../images/newsletter.svg);
+  background: url(../images/bg-newsletter.png);
   padding-top: 10rem;
   padding-bottom: 10rem;
   background-repeat: no-repeat;
@@ -1207,6 +1208,7 @@ section {
   @media screen and (max-width: 767px) {
     background-size: cover;
     padding: 3rem 0rem;
+    background: url(../images/bg-newsletter-shaded.png);
   }
 
   .news_inner {
@@ -2791,20 +2793,19 @@ section {
     font: 0.5rem;
   }
 
-  // .swiper-button-next {
-  //   right: 16px;
-  // }
-
-  // .swiper-button-prev {
-  //   left: 16px;
-  // }
-
   // .swiper-button-next,
   // .swiper-button-prev {
   //   img {
   //     width: 62.5px !important;
   //   }
   // }
+}
+.mySwiper2 .swiper-button-next {
+  right: 23px;
+}
+
+.mySwiper2 .swiper-button-prev {
+  left: 30px;
 }
 
 .mySwiper2.product-slider {

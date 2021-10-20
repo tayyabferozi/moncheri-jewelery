@@ -24,6 +24,38 @@
     />
     <!-- ===========================  EXTERNAL END  =============================== -->
     <title>Home Page</title>
+
+    <style>
+      .swiper.mySwiper2.mySwiper2 > .swiper-wrapper > .swiper-slide {
+        margin-right: 26px !important;
+      }
+      .mySwiper2 .swiper-button-next {
+        right: 23px;
+      }
+
+      .mySwiper2 .swiper-button-prev {
+        left: 23px;
+      }
+
+      @media screen and (min-width: 1250px) {
+        .swiper.mySwiper2 .swiper-button-next img,
+        .swiper.mySwiper2 .swiper-button-prev img {
+          width: 67px;
+        }
+        .swiper.mySwiper2 .swiper-button-prev {
+          left: 27px;
+        }
+        .swiper.mySwiper2 .swiper-button-next {
+          right: 27px;
+        }
+      }
+
+      @media screen and (max-width: 575px) {
+        .swiper-pagination {
+          bottom: 40% !important;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -633,7 +665,7 @@
                 </div>
                 <div class="swiper-button-prev">
                   <img
-                    src="./assets/images/product-slider-arrow-with-bg.svg"
+                    src="./assets/images/product-slider-arrow-with-bg-left.svg"
                     alt="arrow-next"
                   />
                 </div>
@@ -705,7 +737,7 @@
               <div class="row pt-4 mt-3 mt-sm-5">
                 <div class="col-12 col-sm-6 col-md-4">
                   <img
-                    class="mx-auto d-block w-50 w-sm-100"
+                    class="mx-auto d-block w-75 w-sm-100"
                     src="./assets/images/explore/i1.png"
                     alt=""
                   />
@@ -718,7 +750,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-4">
                   <img
-                    class="mx-auto d-block w-50 w-sm-100"
+                    class="mx-auto d-block w-75 w-sm-100"
                     src="./assets/images/explore/i2.png"
                     alt=""
                   />
@@ -732,7 +764,7 @@
                 <div class="col-12 col-sm-3 d-md-none"></div>
                 <div class="col-12 col-sm-6 col-md-4">
                   <img
-                    class="mx-auto d-block w-50 w-sm-100"
+                    class="mx-auto d-block w-75 w-sm-100"
                     src="./assets/images/explore/i3.png"
                     alt=""
                   />
