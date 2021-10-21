@@ -397,6 +397,10 @@ section {
         img {
           width: 16.25%;
 
+          @media screen and (min-width: 1251px) {
+            width: 17.5px;
+          }
+
           @media screen and (max-width: 1070px) {
             width: 15%;
           }
@@ -696,6 +700,9 @@ section {
     @media screen and (min-width: 768px) {
       margin-right: 2vw !important;
     }
+    @media screen and (min-width: 1251px) {
+      margin-right: 25px !important;
+    }
   }
 
   .swiper-wrapper {
@@ -705,6 +712,10 @@ section {
   .swiper-button-prev {
     img {
       width: 5vw;
+
+      @media screen and (min-width: 1251px) {
+        width: 62.5px;
+      }
 
       @media screen and (max-width: 575px) {
         width: 9vw;
@@ -1786,6 +1797,9 @@ section {
 // <!--============================================ PRODUCTS END================================================ -->
 
 .products_container {
+  .page_container {
+    max-width: 1159px;
+  }
   .results-info {
     h2 {
       font-size: 2.25vw;
@@ -1951,11 +1965,11 @@ section {
               font-size: 1vw;
 
               @media screen and (max-width: 991px) {
-                font-size: 1.5vw;
+                font-size: 2vw;
               }
 
-              @media screen and (max-width: 991px) {
-                font-size: 2vw;
+              @media screen and (max-width: 575px) {
+                font-size: 4vw;
               }
             }
 
@@ -1968,6 +1982,10 @@ section {
 
               @media screen and (max-width: 991px) {
                 font-size: 2.5vw;
+              }
+
+              @media screen and (max-width: 575px) {
+                font-size: 5.5vw;
               }
             }
 
@@ -1997,6 +2015,10 @@ section {
           @media screen and (max-width: 991px) {
             font-size: 2.5vw;
           }
+
+          @media screen and (max-width: 575px) {
+            font-size: 5.5vw;
+          }
         }
       }
     }
@@ -2011,6 +2033,10 @@ section {
     position: relative;
     padding: 1.5vw 1.5vw 1.5vw;
 
+    @media screen and (min-width: 1250px) {
+      padding: 18.75px;
+    }
+
     @media screen and (max-width: 767px) {
       padding-left: 2vw;
       padding-right: 2vw;
@@ -2022,6 +2048,10 @@ section {
 
     .product-slider {
       margin-bottom: 5vw;
+
+      @media screen and (min-width: 1251px) {
+        margin-bottom: 62.5px;
+      }
 
       @media screen and (max-width: 575px) {
         margin-bottom: 11vw;
@@ -2037,8 +2067,8 @@ section {
         left: 50%;
         transform: translateX(-50%);
 
-        @media screen and (min-width: 1400px) {
-          top: 212px;
+        @media screen and (min-width: 1250px) {
+          top: 182px;
         }
 
         @media screen and (max-width: 991px) {
@@ -3004,17 +3034,27 @@ section {
 .suggestions_container {
   margin: 3em 0 0;
 
+  .page_container {
+    max-width: 1010px;
+  }
+
+  .mySwiper2 .swiper-button-prev {
+    left: 26px;
+  }
+
+  .mySwiper2 .swiper-button-next {
+    right: 32px;
+  }
+
+  .product-card .product-details .reviews .stars img {
+    @media screen and (min-width: 1251px) {
+      width: 16px;
+    }
+  }
+
   span {
     font: 0.5rem;
   }
-
-  // .swiper-button-next,
-  // .swiper-button-prev {
-  //   img {
-  //     width: 62.5px !important;
-  //   }
-  // }
-
   h1 {
     @media screen and (max-width: 575px) {
       font-size: 7vw;
