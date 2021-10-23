@@ -1160,7 +1160,7 @@ function showProductsOnDOM(prods) {
     `;
 
     productsMarkup += `
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <a href="./product.html" class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="product-card">
           ${imagesMarkup}
           <div class="product-details">
@@ -1174,7 +1174,7 @@ function showProductsOnDOM(prods) {
               <h2>$${price}</h2>
           </div>
         </div>
-      </div>
+      </a>
   `;
   });
 

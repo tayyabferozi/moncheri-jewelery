@@ -24,7 +24,19 @@
   font-family: OptimaItalic;
   src: url(../font/OptimaNovaLTProItalic.otf);
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f3efeb;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #49341c;
+}
 // FONTS END
 // VARIABLES START
 $color1: #49331e;
@@ -79,12 +91,19 @@ html {
   }
 }
 
+.swiper-button-disabled {
+  cursor: default !important;
+  pointer-events: all !important;
+}
+
 body {
   font-family: Optima;
 }
 
 a {
   transition: color 0.4s ease;
+  cursor: pointer;
+  text-decoration: none;
 
   &:hover {
     color: $color6;
@@ -2841,6 +2860,10 @@ section {
 .select_diamond_container {
   margin: 4rem 0;
 
+  .product-card {
+    display: block;
+  }
+
   .splide__pagination {
     display: none;
   }
@@ -3033,6 +3056,10 @@ section {
 
 .suggestions_container {
   margin: 3em 0 0;
+
+  .product-card {
+    display: block;
+  }
 
   .page_container {
     max-width: 1010px;

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow: hidden">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ===========================  EXTERNAL START  =============================== -->
+    <link rel="stylesheet" href="./assets/style/preloader.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,12 +17,13 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./assets/style/style.css" />
     <link rel="stylesheet" href="./assets/style/utilities.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
     <!-- ===========================  EXTERNAL END  =============================== -->
     <title>Home Page</title>
 
@@ -59,6 +61,12 @@
   </head>
 
   <body>
+    <div id="preloader">
+      <div class="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
     <!-- ===========================  UPPER HEADER START  =============================== -->
     <section class="upper_header_container mt-1">
       <div class="page_container">
@@ -111,13 +119,13 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-12 col-md-12 mx-auto">
-              <div class="logo_container">
+              <a href="./index.html" class="logo_container">
                 <img
                   class="w-50 mx-auto d-block w-md-100"
                   src="./assets/images/logo.png"
                   alt=""
                 />
-              </div>
+              </a>
             </div>
 
             <div class="mt-4">
@@ -153,7 +161,10 @@
       <div class="page_container h-100">
         <div class="container-fluid">
           <div class="row">
-            <div class="text_content col-12 col-md-12 text-white">
+            <div
+              class="text_content col-12 col-md-12 text-white"
+              data-aos="fade-up"
+            >
               <img
                 src="./assets/images/bangles-cropped.png"
                 class="w-50 mx-auto d-block mb-5 d-md-none bangles"
@@ -184,14 +195,22 @@
               </h1>
 
               <div class="row">
-                <div class="col-6 col-sm-4">
+                <div
+                  class="col-6 col-sm-4"
+                  data-aos="fade-up"
+                  data-aos-delay=""
+                >
                   <img
                     class="w-100"
                     src="./assets/images/about/i1.png"
                     alt=""
                   />
                 </div>
-                <div class="col-6 col-sm-4">
+                <div
+                  class="col-6 col-sm-4"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
                   <img
                     class="w-100"
                     src="./assets/images/about/i2.png"
@@ -199,7 +218,11 @@
                   />
                 </div>
                 <div class="col-3 d-sm-none"></div>
-                <div class="col-6 col-sm-4 mt-4 mt-sm-0">
+                <div
+                  class="col-6 col-sm-4 mt-4 mt-sm-0"
+                  data-aos="fade-up"
+                  data-aos-delay="150"
+                >
                   <img
                     class="w-100"
                     src="./assets/images/about/i3.png"
@@ -240,7 +263,7 @@
             <div class="col-11 col-md-12 mx-auto">
               <div class="swiper mySwiper2 custom-btns">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
+                  <a href="./product.html" class="swiper-slide">
                     <div class="product-card">
                       <div class="product-slider">
                         <div class="swiper-wrapper">
@@ -291,8 +314,8 @@
                         <h2>$189.99</h2>
                       </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
+                  </a>
+                  <a href="./product.html" class="swiper-slide">
                     <div class="product-card">
                       <div class="product-slider">
                         <div class="swiper-wrapper">
@@ -343,8 +366,8 @@
                         <h2>$189.99</h2>
                       </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
+                  </a>
+                  <a href="./product.html" class="swiper-slide">
                     <div class="product-card">
                       <div class="product-slider">
                         <div class="swiper-wrapper">
@@ -395,8 +418,8 @@
                         <h2>$189.99</h2>
                       </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
+                  </a>
+                  <a href="./product.html" class="swiper-slide">
                     <div class="product-card">
                       <div class="product-slider">
                         <div class="swiper-wrapper">
@@ -447,8 +470,8 @@
                         <h2>$189.99</h2>
                       </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
+                  </a>
+                  <a href="./product.html" class="swiper-slide">
                     <div class="product-card">
                       <div class="product-slider">
                         <div class="swiper-wrapper">
@@ -499,8 +522,8 @@
                         <h2>$189.99</h2>
                       </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
+                  </a>
+                  <a href="./product.html" class="swiper-slide">
                     <div class="product-card">
                       <div class="product-slider">
                         <div class="swiper-wrapper">
@@ -551,8 +574,8 @@
                         <h2>$189.99</h2>
                       </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
+                  </a>
+                  <a href="./product.html" class="swiper-slide">
                     <div class="product-card">
                       <div class="product-slider">
                         <div class="swiper-wrapper">
@@ -603,8 +626,8 @@
                         <h2>$189.99</h2>
                       </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
+                  </a>
+                  <a href="./product.html" class="swiper-slide">
                     <div class="product-card">
                       <div class="product-slider">
                         <div class="swiper-wrapper">
@@ -655,7 +678,7 @@
                         <h2>$189.99</h2>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="swiper-button-next">
                   <img
@@ -690,7 +713,11 @@
                   <div class="col-md-6">
                     <img src="./assets/images/product-slide-1.png" alt="girf" />
                   </div>
-                  <div class="col-md-6 text">
+                  <div
+                    class="col-md-6 text"
+                    data-aos="fade"
+                    data-aos-delay="150"
+                  >
                     <div class="bg"></div>
                     <h1 class="color1">Need Help Finding That Perfect Girf?</h1>
                     <p>
@@ -711,7 +738,11 @@
 
     <!-- ===========================  GEMSTONE 
         START =============================== -->
-    <section class="gemstone_container text-center">
+    <section
+      class="gemstone_container text-center"
+      data-aos="fade-up"
+      data-aos-delay="150"
+    >
       <div class="inner_gemstone">
         <h1 class="fw500 display-5">Gemstone Jewellery</h1>
         <p class="color1">
@@ -724,7 +755,7 @@
     <!-- ===========================  GEMSTONE END  =============================== -->
 
     <!-- ===========================  EXPLORE START =============================== -->
-    <section class="explore_container">
+    <section class="explore_container" data-aos="fade-up" data-aos-delay="150">
       <div class="page_container">
         <div class="container-fluid">
           <div class="row">
@@ -894,62 +925,11 @@
     <!-- ===========================  FOOTER END  =============================== -->
 
     <!-- ===========================  EXTERNAL START  =============================== -->
+    <script src="./assets/js/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/textFit.js"></script>
-    <script>
-      textFit(document.querySelectorAll(".fit"));
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          576: {
-            slidesPerView: 4,
-          },
-          400: {
-            slidesPerView: 2,
-          },
-        },
-      });
-
-      var swiper = new Swiper(".mySwiper2", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          992: {
-            slidesPerView: 4,
-          },
-          576: {
-            slidesPerView: 3,
-          },
-          451: {
-            slidesPerView: 2,
-          },
-          0: {
-            slidesPerView: 1,
-          },
-        },
-      });
-
-      new Swiper(".product-slider", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>
