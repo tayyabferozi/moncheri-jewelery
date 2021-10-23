@@ -123,8 +123,21 @@ a:hover {
   }
 }
 
+.form-control:focus {
+  border-color: #9b795b;
+  -webkit-box-shadow: 0 0 0 0.25rem #9b795b47;
+          box-shadow: 0 0 0 0.25rem #9b795b47;
+}
+
 .modal .btn {
   color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modal .btn:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .modal .btn:nth-child(1) {

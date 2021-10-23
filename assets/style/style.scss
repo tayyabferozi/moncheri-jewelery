@@ -121,9 +121,21 @@ section {
   }
 }
 
+.form-control {
+  &:focus {
+    border-color: $color6;
+    box-shadow: 0 0 0 0.25rem #9b795b47;
+  }
+}
+
 .modal {
   .btn {
     color: #fff;
+    box-shadow:none;
+
+    &:hover {
+      box-shadow:none;
+    }
 
     &:nth-child(1) {
       background-color: #fff;
