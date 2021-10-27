@@ -73,7 +73,7 @@ input[type="range"]::-webkit-slider-thumb::before {
   transition: 0.3s ease-in;
 }
 .coolBeans:hover {
-  background-color: #897358 !important;
+  background-color: #49341c !important;
   color: #fff !important;
   border-color: transparent !important;
 }

@@ -51,3 +51,27 @@ new Swiper(".product-slider", {
     clickable: true,
   },
 });
+
+function toggleCart() {
+  $("#dark-overlay").toggleClass("active");
+  $("#cart-wrapper").toggleClass("active");
+  $("html").toggleClass("inactive");
+}
+
+$(".cart_icon, #close, #dark-overlay").click(toggleCart);
+
+$(".quantity-wrapper > button").click(function () {
+  $this = $(this);
+  let text = $this.html();
+  let input = $this.siblings("input");
+  let newVal;
+  if (text === "+") {
+    newVal = +input.val() + 1;
+  } else {
+    newVal = +input.val() - 1;
+    if (newVal < 0) {
+      newVal = 0;
+    }
+  }
+  input.val(newVal);
+});
