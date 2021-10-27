@@ -968,6 +968,7 @@ section {
 
   @media screen and (max-width: 575px) {
     width: 90%;
+    right: -90%;
   }
 
   &.active {
@@ -1084,9 +1085,13 @@ section {
     }
 
     .dropdown-menu {
-      width: 320px;
+      width: 320px !important;
       border-top-left-radius: 7px !important;
       padding: 1rem 1.5rem;
+
+      &.show {
+        // transform: translate3d(-303px, 31px, 0px) !important;
+      }
 
       input {
         padding: 0.125rem 0.5rem;
