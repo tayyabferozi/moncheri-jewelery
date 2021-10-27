@@ -1089,12 +1089,18 @@ section {
       border-top-left-radius: 7px !important;
       padding: 1rem 1.5rem;
 
+      @media screen and (max-width: 668px) {
+        width: 290px !important;
+        font-size: 92%;
+      }
+
       &.show {
         // transform: translate3d(-303px, 31px, 0px) !important;
       }
 
       input {
         padding: 0.125rem 0.5rem;
+        width: 192px;
 
         &:focus {
           outline: none;

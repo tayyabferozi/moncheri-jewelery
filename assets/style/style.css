@@ -1275,8 +1275,16 @@ a:hover {
   padding: 1rem 1.5rem;
 }
 
+@media screen and (max-width: 668px) {
+  .upper_header_container .dropdown .dropdown-menu {
+    width: 290px !important;
+    font-size: 92%;
+  }
+}
+
 .upper_header_container .dropdown .dropdown-menu input {
   padding: 0.125rem 0.5rem;
+  width: 192px;
 }
 
 .upper_header_container .dropdown .dropdown-menu input:focus {
